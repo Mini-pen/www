@@ -3,6 +3,7 @@ function initPage() {
 		// Parse JSON string into object
 		//window.alert("before parse");
 		//window.alert("contenu du json :\n" + response);
+		console.error("contenu du json :\n" + response);
 		var persoJSON = null;
 		try {
            // null
