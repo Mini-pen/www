@@ -1,0 +1,51 @@
+{
+   "nom":"Prénom Nom",
+   "clan":"Toréador",
+   "generation":"11",
+   "nature":"Aventurier",
+   "attitude":"Risque-tout",
+   "concept":"",
+   "imagefilename":"./test.png",
+   
+   "a_force":4,
+   "a_dexterite":3,
+   "a_vigueur":2,
+   
+   "a_charisme":"",
+   "a_manipulation":"",
+   "a_apparence":"",
+   
+   "a_perception":"",
+   "a_intelligence":"",
+   "a_astuce":"",
+   
+   "c_athletisme":"",
+   "c_bagarre":"",
+   "c_commandement":"",
+   "c_empathie":"",
+   "c_esquive":"",
+   "c_expression":"",
+   "c_intimidation":"",
+   "c_passe-passe":"",
+   "c_subterfuge":"",
+   "c_vigilance":"",
+   
+   "c_animaux":"",
+   "c_artisanats":"",
+   "c_commerce":"",
+   "c_equitation":"",
+   "c_etiquette":"",
+   "c_furtivite":"",
+   "c_melee":"",
+   "c_representation":"",
+   "c_survie":"",
+   "c_tir-a-distance":"",
+      
+   "age":100,
+   "name":"Dracula",
+   "messages":[
+      "msg 1",
+      "msg 2",
+      "msg 3"
+   ]
+}
