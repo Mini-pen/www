@@ -4,30 +4,40 @@ function initPage() {
 		//window.alert("before parse");
 		//window.alert("contenu du json :\n" + response);
 		console.error("contenu du json :\n" + response);
-		var persoJSON = null;
+		var json_root = null;
 		try {
            // null
-			persoJSON = JSON.parse(response);
+			json_root = JSON.parse(response);
 		} catch (e) {
 		console.error("Erreur lors du parse :", e); 
 		}
 		//window.alert("after parse :\n");
 		
-		for (var key in persoJSON){
-			var attrName = key;
-			var attrValue = persoJSON[key];
-			if( (typeof attrValue) === 'string') {
-				setTextValue(attrName,attrValue);
-			}
-			else {
-				if( (typeof attrValue) === 'number')
-				setNumberValue(attrName,attrValue, 8);
-			}
-		}		
-		//persoJSON.nom;
-		
+		for (var key in json_root.Lyrics) {
+			//TODO populate timeEvent table
+		}
+			//TODO populate 
+		    // for (var key in json_root.Effects){			
+			// var attrName = key;
+			// var attrValue = json_root[key];
+			// if( (typeof attrValue) === 'string') {
+				// setTextValue(attrName,attrValue);
+			// }
+			// else {
+				// if( (typeof attrValue) === 'number')
+				// setNumberValue(attrName,attrValue, 8);
+			// }
+		// }				
 		window.alert("Init fini !");
 	});
+}
+
+function getNextFreeTextObject(type,textObject) {
+//TODO : add a boolean and a counter for each text object
+}
+
+function liberateTextObject(type,textObject) {
+//TODO : add a boolean and a counter for each text object
 }
 
 function setTextValue(labelName, textValue) {	
