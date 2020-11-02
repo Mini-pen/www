@@ -51,7 +51,7 @@ function setWillPool(value) {
 }
 
 function setNumberValue(baseNumberName, value, maxValue) {	
-	window.alert("Changing value of svgElem : " + baseNumberName + " to value : " + value);
+	//window.alert("Changing value of svgElem : " + baseNumberName + " to value : " + value);
 	
 	for (var i = 0; i < maxValue; i++) {
 		var svgElem = null;
