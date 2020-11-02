@@ -1,114 +1,82 @@
 {    
-    "joueur": "PNJ",
-	"nom": "Vlad Tepes",
-    "clan": "Tzimisce",
-    "generation": "6",
-    "nature": "Autoritaire",
-    "attitude": "Cruel",
-    "concept": "Tyran",
-    "imagefilename": "./test.png",
+    "SongName": "Navire de sang",
+	"Artist": "RDK",
+    "Year": "2020",
+    "Album": "the album",
+    "AlbumCover": "./test.png",
+	
+	"Effects" : [
+		{
+		"EffectName" : "DissolveIn100",	
+		"EffectType" : "DissolveIn",		
+        "Duration" : 100,
+		"Delay": 0
+		},
+		{
+		"EffectName" : "DissolveOut100",	
+		"EffectType" : "DissolveOut",		
+        "Duration" : 100,
+		"Delay": 0
+		},
+		{        
+        "EffectType" : "Translate20RL",
+		"EffectType" : "Translate",		
+        "Duration" : 100,
+		"Delay": 0,
+		"Reverse" : true,
+		"Loop" : true,
+		"Params" : ["20","20"]
+		},
+		{
+        "EffectName" : "FillColorChangeSmoothRed",
+		"EffectType" : "ChangeColor",				
+        "Duration" : 100,
+		"Delay": 0,
+		"Reverse" : true,
+		"Loop" : true,
+		"Params" : ["255","50","50", "smooth", "fill"]
+		}			
+	]
 
-    "a_force": 3,
-    "a_dexterite": 2,
-    "a_vigueur": 1,
-
-    "a_charisme": 5,
-    "a_manipulation": 10,
-    "a_apparence": 1,
-
-    "a_perception": 0,
-    "a_intelligence": 4,
-    "a_astuce": -3,
-
-    "c_athletisme": 0,
-    "c_bagarre": 1,
-    "c_commandement": 2,
-    "c_empathie": 3,
-    "c_esquive": 4,
-    "c_expression": 5,
-    "c_intimidation": 6,
-    "c_passe-passe": 7,
-    "c_subterfuge": 8,
-    "c_vigilance": 9,
-
-    "c_animaux": 0,
-    "c_artisanats": 1,
-    "c_commerce": 3,
-    "c_equitation": 2,
-    "c_etiquette": 1,
-    "c_furtivite": 2,
-    "c_melee": 3,
-    "c_representation": 2,
-    "c_survie": 4,
-    "c_tir-a-distance": 1,
-
-    "c_erudition": 3,
-    "c_droit": 3,
-    "c_investigation": 2,
-    "c_linguistique": 6,
-    "c_medecine": 3,
-    "c_occulte": 0,
-    "c_politique": 5,
-    "c_sagesse_populaire": 4,
-    "c_senechal": 3,
-    "c_theologie": 3,
-
-    "av_discipline_1_name": "Occultation",
-    "av_discipline_1": 5,
-    "av_discipline_2_name": "Domination",
-    "av_discipline_2": 2,
-    "av_discipline_3_name": "Auspex",
-    "av_discipline_3": 5,
-    "av_discipline_4_name": "Natation",
-    "av_discipline_4": 2,
-    "av_discipline_5_name": "Bronzage",
-    "av_discipline_5": 5,
-    "av_discipline_6_name": "Kayak",
-    "av_discipline_6": 5,
-
-    "av_historique_1_name": "Troupeau",
-    "av_historique_1": 1,
-    "av_historique_2_name": "Statut",
-    "av_historique_2": 6,
-    "av_historique_3_name": "Domaine",
-    "av_historique_3": 2,
-    "av_historique_4_name": "Serviteur",
-    "av_historique_4": 4,
-    "av_historique_5_name": "Parfumerie",
-    "av_historique_5": 3,
-    "av_historique_6_name": "Tanneur",
-    "av_historique_6": 0,
-
-    "av_vertus_1": 6,
-    "av_vertus_2": 2,
-
-    "av_vertus_courage": 4,
-
-    "av_autres_1_name": "ABC",
-    "av_autres_1": 0,
-    "av_autres_2_name": "abc",
-    "av_autres_2": 8,
-    "av_autres_3_name": "DEF",
-    "av_autres_3": 1,
-    "av_autres_4_name": "def",
-    "av_autres_4": 7,
-    "av_autres_5_name": "GHI",
-    "av_autres_5": 2,
-    "av_autres_6_name": "ghi",
-    "av_autres_6": 6,
-    "av_autres_7_name": "JKL",
-    "av_autres_7": 3,
-    "av_autres_8_name": "jkl",
-    "av_autres_8": 5,
-
-    "av_voie_1_name": "Voie des rois",
-    "av_voie_1": 4,
-    "av_aura_1_name": "Noble",
-    "av_aura_1": -1,
-
-    "av_volonte": 8,
-    "av_volonte_actuel": "",
-
-    "av_sang_actuel": "",
-    "av_sante_actuelle": ""
+    "Lyrics": [
+    {
+      "Text": "Navire",
+	  "TextType" : "horizontal",
+      "TimestampShow": 202409,
+      "TimestampHide": 202409,
+	  "PosX" : 0.0,
+	  "PosY" : 0.0,	  
+	  "Angle" : 0.0,
+	  "EffectShow" : "Dissolve100",
+	  "EffectHide" : "DissolveOut100",
+      "OtherEffects": []
+    },
+	{
+      "Text": "de",
+	  "TextType" : "horizontal",
+      "TimestampShow": 202409,
+      "TimestampHide": 202409,
+	  "PosX" : 0.0,
+	  "PosY" : 0.0,	  
+	  "Angle" : 0.0,
+	  "EffectShow" : "Dissolve100",
+	  "EffectHide" : "DissolveOut100",
+      "OtherEffects":
+      "OtherEffects": []
+    },
+    {
+      "Text": "Sang",
+	  "TextType" : "special_01",
+      "TimestampShow": 202409,
+      "TimestampHide": 202409,
+	  "PosX" : 0.0,
+	  "PosY" : 0.0,	  
+	  "Angle" : 0.0,
+	  "EffectShow" : "Dissolve100",
+	  "EffectHide" : "DissolveOut100",
+      "OtherEffects":
+      "OtherEffects": []
+    },
+    
+  ]
 }
