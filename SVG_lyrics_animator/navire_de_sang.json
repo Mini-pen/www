@@ -3,8 +3,7 @@
 	"Artist": "RDK",
     "Year": "2020",
     "Album": "the album",
-    "AlbumCover": "./test.png",
-	
+    "AlbumCover": "./test.png",	
 	"Effects" : [
 		{
 		"EffectName" : "DissolveIn100",	
@@ -19,7 +18,7 @@
 		"Delay": 0
 		},
 		{        
-        "EffectType" : "Translate20RL",
+        "EffectName" : "Translate20RL",
 		"EffectType" : "Translate",		
         "Duration" : 100,
 		"Delay": 0,
@@ -36,8 +35,7 @@
 		"Loop" : true,
 		"Params" : ["255","50","50", "smooth", "fill"]
 		}			
-	]
-
+	],
     "Lyrics": [
     {
       "Text": "Navire",
@@ -61,7 +59,6 @@
 	  "Angle" : 0.0,
 	  "EffectShow" : "Dissolve100",
 	  "EffectHide" : "DissolveOut100",
-      "OtherEffects":
       "OtherEffects": []
     },
     {
@@ -74,9 +71,7 @@
 	  "Angle" : 0.0,
 	  "EffectShow" : "Dissolve100",
 	  "EffectHide" : "DissolveOut100",
-      "OtherEffects":
       "OtherEffects": []
-    },
-    
+    }    
   ]
 }
