@@ -1,5 +1,6 @@
 
 var audioInit = false;
+var audio;
 
 function initPage() {
 	loadJSON(function(response) {
@@ -37,7 +38,7 @@ function initPage() {
 	
 	audioFileName = 'audio/navire_de_sang.wav';	
 	console.log("Chargement du fichier son : \n" + audioFileName);
-	var audio = new Audio(audioFileName);
+	audio = new Audio(audioFileName);
 	audioInit = true;
 }
 
