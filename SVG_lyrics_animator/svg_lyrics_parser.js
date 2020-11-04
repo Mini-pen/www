@@ -95,8 +95,7 @@ function playPauseAnim()
 function playPauseAudio()
 {
 	//if (!globalExists(audio))
-	if (!audioInit)
-	{
+	if (!audioInit)	{
 		var audioInit = false;
 		var audioIsPlaying = false;		
 		console.log("Chargement du fichier son : \n" + audioFileName);
@@ -104,18 +103,17 @@ function playPauseAudio()
 		audioInit = true;
 	}
 	
-	if (audioInit)
-	{
-	if (audioIsPlaying) {	
-	console.log("Audio -> pause"); 
-	audio.pause(); 
-	audioIsPlaying = false;
-	}
-	else{	
-	console.log("Audio -> play"); 
-	audio.play(); 
-	audioIsPlaying = true;
-	}
+	if (audioInit)	{		
+		if (audio.paused) {	
+			console.log("Audio -> play"); 
+			audio.play(); 
+			audioIsPlaying = true;
+		}
+		else {	
+			console.log("Audio -> pause"); 
+			audio.pause(); 
+			audioIsPlaying = false;
+		}
 	}
 }
 
