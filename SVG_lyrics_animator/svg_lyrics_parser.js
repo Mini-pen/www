@@ -29,9 +29,10 @@ function initPage() {
 			// }
 		// }				
 		
-		var audioFileName = 'audio/navire_de_sang.wav';
 		window.alert("Init fini !");
 	});
+	
+	var audioFileName = 'audio/navire_de_sang.wav';
 }
 
 function globalExists(varName) {
@@ -95,17 +96,23 @@ function playPauseAudio()
 	if (!globalExists(audioInit))
 	{
 		var audioInit = true;
-		var audioIsPlaying = false;
+		var audioIsPlaying = false;		
+		window.alert("Chargement du fichier son : \n" + audioFileName);
 		var audio = new Audio(audioFileName);
 	}
 	
+	if (globalExists(audio))
+	{
 	if (audioIsPlaying) {	
+	console.error("Audio -> pause"); 
 	audio.pause(); 
 	audioIsPlaying = false;
 	}
 	else{	
+	console.error("Audio -> play"); 
 	audio.play(); 
 	audioIsPlaying = true;
+	}
 	}
 }
 
