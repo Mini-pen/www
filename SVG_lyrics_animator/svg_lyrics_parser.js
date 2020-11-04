@@ -28,14 +28,86 @@ function initPage() {
 				// setNumberValue(attrName,attrValue, 8);
 			// }
 		// }				
+		
+		var audioFileName = 'audio/navire_de_sang.wav';
 		window.alert("Init fini !");
 	});
 }
 
-function playAudio()
+function globalExists(varName) {
+  // Calling eval by another name causes evalled code to run in a
+  // subscope of the global scope, rather than the local scope.
+  const globalEval = eval;
+  try {
+    globalEval(varName);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function animTest()
 {
-	var audio = new Audio('audio/navire_de_sang.wav');
-	audio.play();
+//let el = document.querySelector('playIcon');
+let el = document.getElementById('playIcon');
+
+el.animate([
+    { background: '#ff004d', offset: 0 },
+    { background: '#ff77ab', offset: 0.20 },
+    { background: '#00e756', offset: 0.5 },
+    { background: '#29adff', offset: 0.80 },
+    { background: '#ff77ab', offset: 1 }
+], {
+    duration: 2000,
+    direction: 'alternate',
+    iterations: Infinity
+});
+}
+
+function play()
+{
+	playPauseAudio();
+	playPauseAnim();
+}
+
+function playPauseAnim()
+{
+	if !globalExists(animInit)
+	{
+		var animInit = true;
+		var animIsPlaying = false;
+		//var audio = new Audio(audioFileName);
+		animTest();
+	}
+	
+	if !animIsPlaying {	
+	//audio.play(); 
+	animIsPlaying = true;
+	}
+	else{	
+	//audio.pause(); 
+	animIsPlaying = false;
+	}	
+}
+
+function playPauseAudio()
+{
+	if !globalExists(audioInit)
+	{
+		var audioInit = true;
+		var audioIsPlaying = false;
+		var audio = new Audio(audioFileName);
+	}
+	
+	if !audioIsPlaying {	
+	audio.play(); 
+	audioIsPlaying = true;
+	}
+	else{	
+	audio.pause(); 
+	audioIsPlaying = false;
+	}
+}	
 }
 
 function getNextFreeTextObject(type,textObject) {
