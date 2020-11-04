@@ -72,7 +72,7 @@ function play()
 
 function playPauseAnim()
 {
-	if !globalExists(animInit)
+	if (!(globalExists(animInit)))
 	{
 		var animInit = true;
 		var animIsPlaying = false;
@@ -92,7 +92,7 @@ function playPauseAnim()
 
 function playPauseAudio()
 {
-	if !globalExists(audioInit)
+	if (!(globalExists(audioInit)))
 	{
 		var audioInit = true;
 		var audioIsPlaying = false;
