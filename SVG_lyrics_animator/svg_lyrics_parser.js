@@ -80,7 +80,7 @@ function playPauseAnim()
 		animTest();
 	}
 	
-	if animIsPlaying {	
+	if (animIsPlaying) {	
 	//audio.pause(); 
 	animIsPlaying = false;
 	}
@@ -99,7 +99,7 @@ function playPauseAudio()
 		var audio = new Audio(audioFileName);
 	}
 	
-	if audioIsPlaying {	
+	if (audioIsPlaying) {	
 	audio.pause(); 
 	audioIsPlaying = false;
 	}
