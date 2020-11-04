@@ -104,7 +104,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect       
-       onclick="logTime();
+       onclick="logCurrentTime();
 	   rx="2.2678576"
        ry="2.2678576"
        y="5.2916665"
