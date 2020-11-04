@@ -78,10 +78,8 @@ function play()
 	playPauseAnim();
 }
 
-function playPauseAnim()
-{
-	if (!animInit)
-	{
+function playPauseAnim(){
+	if (!animInit)	{
 		var animInit = false;
 		var animIsPlaying = false;
 		//var audio = new Audio(audioFileName);
@@ -102,7 +100,7 @@ function playPauseAnim()
 function logTime() {
 	if (globalExists(audioInit)) {
 		if (audioInit)	{		
-			console.log("Current Time : " audio.currentTime);
+			console.log("Current Time : " + audio.currentTime);
 		}
 	}
 }
