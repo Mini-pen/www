@@ -32,6 +32,12 @@ function initPage() {
 	});
 }
 
+function playAudio()
+{
+	var audio = new Audio('audio/navire_de_sang.wav');
+	audio.play();
+}
+
 function getNextFreeTextObject(type,textObject) {
 //TODO : add a boolean and a counter for each text object
 }
