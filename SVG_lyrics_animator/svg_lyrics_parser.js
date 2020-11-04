@@ -93,23 +93,23 @@ function playPauseAnim()
 
 function playPauseAudio()
 {
-	if (!globalExists(audioInit))
+	if (!globalExists(audio))
 	{
 		var audioInit = true;
 		var audioIsPlaying = false;		
-		window.alert("Chargement du fichier son : \n" + audioFileName);
+		console.log("Chargement du fichier son : \n" + audioFileName);
 		var audio = new Audio(audioFileName);
 	}
 	
 	if (globalExists(audio))
 	{
 	if (audioIsPlaying) {	
-	console.error("Audio -> pause"); 
+	console.log("Audio -> pause"); 
 	audio.pause(); 
 	audioIsPlaying = false;
 	}
 	else{	
-	console.error("Audio -> play"); 
+	console.log("Audio -> play"); 
 	audio.play(); 
 	audioIsPlaying = true;
 	}
