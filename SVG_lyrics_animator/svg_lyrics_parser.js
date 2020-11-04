@@ -72,7 +72,7 @@ function play()
 
 function playPauseAnim()
 {
-	if (!(globalExists(animInit)))
+	if !(globalExists(animInit))
 	{
 		var animInit = true;
 		var animIsPlaying = false;
@@ -80,32 +80,32 @@ function playPauseAnim()
 		animTest();
 	}
 	
-	if !animIsPlaying {	
-	//audio.play(); 
-	animIsPlaying = true;
-	}
-	else{	
+	if animIsPlaying {	
 	//audio.pause(); 
 	animIsPlaying = false;
+	}
+	else{	
+	//audio.play(); 
+	animIsPlaying = true;
 	}	
 }
 
 function playPauseAudio()
 {
-	if (!(globalExists(audioInit)))
+	if !(globalExists(audioInit))
 	{
 		var audioInit = true;
 		var audioIsPlaying = false;
 		var audio = new Audio(audioFileName);
 	}
 	
-	if !audioIsPlaying {	
-	audio.play(); 
-	audioIsPlaying = true;
-	}
-	else{	
+	if audioIsPlaying {	
 	audio.pause(); 
 	audioIsPlaying = false;
+	}
+	else{	
+	audio.play(); 
+	audioIsPlaying = true;
 	}
 }	
 }
