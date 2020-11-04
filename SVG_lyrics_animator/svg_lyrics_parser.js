@@ -99,6 +99,14 @@ function playPauseAnim()
 	}	
 }
 
+function logTime() {
+	if (globalExists(audioInit)) {
+		if (audioInit)	{		
+			console.log("Current Time : " audio.currentTime);
+		}
+	}
+}
+
 function playPauseAudio()
 {
 	//if (!globalExists(audio))
@@ -112,12 +120,12 @@ function playPauseAudio()
 	if (globalExists(audioInit)) {
 		if (audioInit)	{		
 			if (audio.paused) {	
-				console.log("Audio -> play"); 
+				console.log("Audio -> play. Current position is : " audio.currentTime); 
 				audio.play(); 
 				audioIsPlaying = true;
 			}
 			else {	
-				console.log("Audio -> pause"); 
+				console.log("Audio -> pause. Current position is : " audio.currentTime); 
 				audio.pause(); 
 				audioIsPlaying = false;
 			}
