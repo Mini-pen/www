@@ -107,7 +107,6 @@ function playPauseAudio()
 	audio.play(); 
 	audioIsPlaying = true;
 	}
-}	
 }
 
 function getNextFreeTextObject(type,textObject) {
