@@ -32,7 +32,10 @@ function initPage() {
 		window.alert("Init fini !");
 	});
 	
-	audioFileName = 'audio/navire_de_sang.wav';
+	audioFileName = 'audio/navire_de_sang.wav';	
+	console.log("Chargement du fichier son : \n" + audioFileName);
+	var audio = new Audio(audioFileName);
+	var audioInit = true;
 }
 
 function globalExists(varName) {
@@ -95,13 +98,13 @@ function playPauseAnim()
 function playPauseAudio()
 {
 	//if (!globalExists(audio))
-	if (!audioInit)	{
-		var audioInit = false;
-		var audioIsPlaying = false;		
-		console.log("Chargement du fichier son : \n" + audioFileName);
-		var audio = new Audio(audioFileName);
-		audioInit = true;
-	}
+	// if (!audioInit)	{
+		// var audioInit = false;
+		// var audioIsPlaying = false;		
+		// console.log("Chargement du fichier son : \n" + audioFileName);
+		// var audio = new Audio(audioFileName);
+		// audioInit = true;
+	// }
 	
 	if (audioInit)	{		
 		if (audio.paused) {	
