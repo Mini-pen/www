@@ -1,3 +1,6 @@
+
+var audioInit = false;
+
 function initPage() {
 	loadJSON(function(response) {
 		// Parse JSON string into object
@@ -35,7 +38,7 @@ function initPage() {
 	audioFileName = 'audio/navire_de_sang.wav';	
 	console.log("Chargement du fichier son : \n" + audioFileName);
 	var audio = new Audio(audioFileName);
-	var audioInit = true;
+	audioInit = true;
 }
 
 function globalExists(varName) {
@@ -105,17 +108,18 @@ function playPauseAudio()
 		// var audio = new Audio(audioFileName);
 		// audioInit = true;
 	// }
-	
-	if (audioInit)	{		
-		if (audio.paused) {	
-			console.log("Audio -> play"); 
-			audio.play(); 
-			audioIsPlaying = true;
-		}
-		else {	
-			console.log("Audio -> pause"); 
-			audio.pause(); 
-			audioIsPlaying = false;
+	if (globalExists(audioInit)) {
+		if (audioInit)	{		
+			if (audio.paused) {	
+				console.log("Audio -> play"); 
+				audio.play(); 
+				audioIsPlaying = true;
+			}
+			else {	
+				console.log("Audio -> pause"); 
+				audio.pause(); 
+				audioIsPlaying = false;
+			}
 		}
 	}
 }
