@@ -79,7 +79,9 @@ function initPage() {
 	addDelayButton = getSvgElem("addDelayButton");
 		
 	playPauseButtonText.textContent = "Play";
-	pauseIcon.setAttributeNS(null, 'visibility', 'hidden');
+	pauseIcon.setAttributeNS(null, 'visibility', 'hidden');	
+	
+	correctionDelayText.textContent = audioTimeDelay;
 	
 	audioFileName = 'audio/navire_de_sang.wav';	
 	console.log("Chargement du fichier son : \n", audioFileName);
@@ -167,14 +169,15 @@ function getShowTime(){
  }
 
 function showHideGui() {
-	//playIcon;
-	//pauseIcon;
+	toggleVisibilty(playIcon);
+	toggleVisibilty(pauseIcon);
 	toggleVisibilty(timeText);
 	toggleVisibilty(delayText);
 	toggleVisibilty(loadJsonButton);
 	toggleVisibilty(playButton);
 	toggleVisibilty(subDelayButton);
 	toggleVisibilty(addDelayButton);
+	toggleVisibilty(correctionDelayText);
 }
 
 function getSvgElem(elemId)
@@ -203,6 +206,13 @@ function toggleVisibilty(svgElem) {
 	if ('hidden' != newValue) { newValue = 'hidden'; }
 	else { newValue = 'visible'; }
 	svgElem.setAttributeNS(null, 'visibility', newValue);
+}
+
+function toggleOpacity(svgElem) {
+	var newValue = svgElem.getAttributeNS(null, 'opacity')
+	if ('0' != newValue) { newValue = '0'; }
+	else { newValue = '1'; }
+	svgElem.setAttributeNS(null, 'opacity', newValue);
 }
 
 function animTest()
@@ -278,18 +288,19 @@ function playPauseAudio()
 			console.log("Audio -> play. Current position is : ", audio.currentTime); 
 			audio.play();				
 			playPauseButtonText.textContent = "Pause";
-			toggleVisibilty(playIcon);
-			toggleVisibilty(pauseIcon);
+			toggleOpacity(playIcon);
+			toggleOpacity(pauseIcon);
 			startTimer();
 		}
 		else {	
 			console.log("Audio -> pause. Current position is : ", audio.currentTime); 
 			audio.pause(); 
 			playPauseButtonText.textContent = "Play";	
-			toggleVisibilty(playIcon);
-			toggleVisibilty(pauseIcon);
+			toggleOpacity(playIcon);
+			toggleOpacity(pauseIcon);
 			pauseTimer();
-			audioTimeDelay = 0;
+			audioTimeDelay = 0;		
+			correctionDelayText.textContent = audioTimeDelay;
 		}
 	}
 }
