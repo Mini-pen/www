@@ -264,6 +264,7 @@ function playPauseAudio()
 			toggleVisibilty(playIcon);
 			toggleVisibilty(pauseIcon);
 			pauseTimer();
+			audioTimeDelay = 0;
 		}
 	}
 }
