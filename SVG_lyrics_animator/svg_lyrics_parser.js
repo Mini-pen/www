@@ -123,6 +123,11 @@ function resetTimer(){
 }
 
 function computePrintableTime(time) {
+  var sign = "";
+  if (time < 0) { 
+  time = - time;  
+  sign = "- ";
+  }
   // var days = Math.floor(time / (1000 * 60 * 60 * 24));
   var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
@@ -132,17 +137,22 @@ function computePrintableTime(time) {
   minutes = (minutes < 10) ? "0" + minutes : minutes;
   seconds = (seconds < 10) ? "0" + seconds : seconds;
   milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
-  return hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
+  return sign + hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
 }
 
 function computeShortPrintableTime(time) {
+  var sign = "";
+  if (time < 0) { 
+  time = - time;  
+  sign = "- ";
+  }
   var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((time % (1000 * 60)) / 1000);
   var milliseconds = Math.floor(time % (1000));
   minutes = (minutes < 10) ? "0" + minutes : minutes;
   seconds = (seconds < 10) ? "0" + seconds : seconds;
   milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
-  return minutes + ':' + seconds + ':' + milliseconds;
+  return sign + minutes + ':' + seconds + ':' + milliseconds;
 }
 
 function getShowTime(){
