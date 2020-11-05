@@ -47,9 +47,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="19.24077"
-     inkscape:cx="394.96063"
-     inkscape:zoom="1.5870498"
+     inkscape:cy="47.919182"
+     inkscape:cx="460.27398"
+     inkscape:zoom="3.1740996"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -524,14 +524,67 @@
      id="tspan1007"
      x="84.088623"
      y="19.660976"
-     style="stroke-width:0.269449">00:00,000 </tspan></text>
-<ellipse
-   onclick="timerCalibrate();"
-   style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.464999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
-   id="timerCalibrateButton"
-   cx="136.45639"
-   cy="16.184086"
-   rx="2.1513891"
-   ry="2.0335147" />
+     style="stroke-width:0.269449">00:00:02:216 </tspan></text>
+<text
+   onclick="logCurrentTime();"
+   inkscape:label="#delayText"
+   id="delayText"
+   y="10.471189"
+   x="117.38459"
+   style="font-style:normal;font-weight:normal;font-size:7.43422px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+   xml:space="preserve"><tspan
+     style="stroke-width:0.269449"
+     y="10.471189"
+     x="117.38459"
+     id="tspan1007-7"
+     sodipodi:role="line">02:216 </tspan></text>
+<g
+   onclick="subDelay();"
+   transform="translate(0.16671394,-16.838108)"
+   id="subDelayButton">
+  <ellipse
+     ry="2.8670845"
+     rx="3.0283198"
+     cy="24.686499"
+     cx="112.82638"
+     id="timerCalibrateButton"
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.464999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+     onclick="timerCalibrate();" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+     x="110.85499"
+     y="27.544945"
+     id="text1157"><tspan
+       sodipodi:role="line"
+       id="tspan1155"
+       x="110.85499"
+       y="27.544945"
+       style="stroke-width:0.264583">-</tspan></text>
+</g>
+<g
+   onclick="addDelay();"
+   transform="translate(0.16671394,-16.838108)"
+   id="g1188">
+  <ellipse
+     onclick="timerCalibrate();"
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+     id="timerCalibrateButton-2"
+     cx="147.66008"
+     cy="24.575727"
+     rx="3.0283198"
+     ry="2.8670845" />
+  <text
+     id="text1157-2"
+     y="26.652702"
+     x="145.01488"
+     style="font-style:normal;font-weight:normal;font-size:6.32208px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+     xml:space="preserve"><tspan
+       style="stroke-width:0.264583"
+       y="26.652702"
+       x="145.01488"
+       id="tspan1155-5"
+       sodipodi:role="line">+</tspan></text>
+</g>
 </g>
 </svg>
