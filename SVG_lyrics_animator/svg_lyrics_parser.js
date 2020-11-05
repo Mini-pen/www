@@ -77,6 +77,7 @@ function getShowTime(){
     difference =  updatedTime - startTime;
   }
   if (timeText != null) timeText.textContent = computePrintableTime(difference);
+  if (delayText != null) delayText.textContent = computePrintableTime(difference-(audio.currentTime*1000));
  }
 
 function initPage() {
@@ -205,10 +206,17 @@ function logCurrentTime() {
 		console.log("Current stopwatchtime : ", computePrintableTime(difference) );
 		console.log("Current audio time : ", computePrintableTime(audio.currentTime*1000))
 		console.log("Delay : ", computePrintableTime(difference-(audio.currentTime*1000)))
-		timerCalibrate();
 	}
 }
 
+
+function subDelay() {
+	difference = difference - 10;
+}
+
+function addDelay() {
+	difference = difference + 10;
+}
 
 function timerCalibrate() {
 	difference = audio.currentTime*1000;
@@ -224,7 +232,6 @@ function playPauseAudio()
 			toggleVisibilty(playIcon);
 			toggleVisibilty(pauseIcon);
 			startTimer();
-			timerCalibrate();
 		}
 		else {	
 			console.log("Audio -> pause. Current position is : ", audio.currentTime); 
