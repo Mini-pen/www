@@ -144,7 +144,6 @@ function getShowTime(){
   if (delayText != null) delayText.textContent = computePrintableTime(difference-(audio.currentTime*1000));
  }
 
-
 showHideGui() {
 	//playIcon;
 	//pauseIcon;

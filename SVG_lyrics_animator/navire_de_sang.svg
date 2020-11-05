@@ -48,9 +48,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="42.360363"
-     inkscape:cx="281.03056"
-     inkscape:zoom="1.1222137"
+     inkscape:cy="-25.336403"
+     inkscape:cx="146.64743"
+     inkscape:zoom="1.5870498"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -551,21 +551,14 @@
      id="timerCalibrateButton"
      style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.464999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
      onclick="timerCalibrate();" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-     x="110.85499"
-     y="27.544945"
-     id="text1157"><tspan
-       sodipodi:role="line"
-       id="tspan1155"
-       x="110.85499"
-       y="27.544945"
-       style="stroke-width:0.264583">-</tspan></text>
+  <path
+     id="path1192"
+     d="m 111.44124,24.686499 h 2.77028"
+     style="fill:none;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </g>
 <g
    onclick="addDelay();"
-   transform="translate(-3.5374529,-16.838108)"
+   transform="translate(-4.0666196,-16.838108)"
    id="addDelayButton">
   <ellipse
      onclick="timerCalibrate();"
@@ -575,17 +568,14 @@
      cy="24.575727"
      rx="3.0283198"
      ry="2.8670845" />
-  <text
-     id="text1157-2"
-     y="26.652702"
-     x="145.01488"
-     style="font-style:normal;font-weight:normal;font-size:6.32208px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-     xml:space="preserve"><tspan
-       style="stroke-width:0.264583"
-       y="26.652702"
-       x="145.01488"
-       id="tspan1155-5"
-       sodipodi:role="line">+</tspan></text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 146.27494,24.575727 h 2.77028"
+     id="path1192-6" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 147.66008,23.190587 v 2.77028"
+     id="path1192-2" />
 </g>
 <rect
    onclick="showHideGui();"
