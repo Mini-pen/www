@@ -7,6 +7,7 @@ var timeText;
 
 var animInit = false;
 var animIsPlaying = false;
+var audioFileName;
 
 //var startTimerButton = document.querySelector('.startTimer');
 //var pauseTimerButton = document.querySelector('.pauseTimer');
