@@ -5,6 +5,9 @@ var audio;
 var playPauseButtonText;
 var timeText;
 
+var animInit = false;
+var animIsPlaying = false;
+
 //var startTimerButton = document.querySelector('.startTimer');
 //var pauseTimerButton = document.querySelector('.pauseTimer');
 //var timerDisplay = document.querySelector('.timer');
@@ -171,13 +174,13 @@ function play()
 }
 
 function playPauseAnim(){
-	// if (animInit)	{
-		// var animInit = false;
-		// var animIsPlaying = false;
-		//var audio = new Audio(audioFileName);
+	if (animInit)	{
+		var animInit = false;
+		var animIsPlaying = false;
+		// var audio = new Audio(audioFileName);
 		// animTest();
-		// animInit = true;
-	// }
+		animInit = true;
+	}
 	
 	if (animIsPlaying) {	
 	//audio.pause(); 
