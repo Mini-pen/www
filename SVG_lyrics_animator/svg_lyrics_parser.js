@@ -210,7 +210,7 @@ function logCurrentTime() {
 
 
 function timerCalibrate() {
-	difference = 45 + audio.currentTime*1000;
+	difference = audio.currentTime*1000 - 45;
 }
 
 function playPauseAudio()
