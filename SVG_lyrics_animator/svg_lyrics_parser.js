@@ -79,7 +79,7 @@ function initPage() {
 	addDelayButton = getSvgElem("addDelayButton");
 		
 	playPauseButtonText.textContent = "Play";
-	pauseIcon.setAttributeNS(null, 'visibility', 'hidden');	
+	pauseIcon.setAttributeNS(null, 'opacity', '0');	
 	
 	correctionDelayText.textContent = audioTimeDelay;
 	
@@ -143,7 +143,7 @@ function computePrintableTime(time) {
 }
 
 function computeShortPrintableTime(time) {
-  var sign = "";
+  var sign = "  ";
   if (time < 0) { 
   time = - time;  
   sign = "- ";
