@@ -593,7 +593,7 @@
    style="font-style:normal;font-weight:normal;font-size:6.18733px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:0;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
    x="104.60503"
    y="9.695303"
-   id="CorrectionDelayText"
+   id="correctionDelayText"
    inkscape:label="#delayText"
    onclick="logCurrentTime();"><tspan
      id="tspan1007-7-3"
