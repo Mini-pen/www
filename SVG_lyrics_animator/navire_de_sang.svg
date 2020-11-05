@@ -47,9 +47,9 @@
      showgrid="false"
      inkscape:current-layer="g4730-0"
      inkscape:document-units="mm"
-     inkscape:cy="240.9978"
-     inkscape:cx="397.85634"
-     inkscape:zoom="0.7935249"
+     inkscape:cy="71.986377"
+     inkscape:cx="229.85274"
+     inkscape:zoom="4.4888547"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -90,6 +90,7 @@
        id=&quot;rect2087&quot;
        style=&quot;fill:#f9f9f9;stroke:#0a001a;stroke-width:0.264583;stroke-opacity:1&quot; /&gt;
     <g
+   onload="initPage();"
    onclick="initPage();"
    onmouseout="style.stroke = &quot;#000000&quot;;"
    onmouseover="style.stroke = &quot;#CC0000&quot;; "
@@ -171,20 +172,17 @@
      style="fill:#23d62c;fill-opacity:1;stroke:#23d62c;stroke-width:1.29389;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 163.61427,12.035725 V 8.3047748 l 3.2456,1.8793952 z"
      id="playIcon" />
-  <text
-     onclick="logCurrentTime();"
-     inkscape:label="#timeText"
-     transform="scale(1.0000651,0.9999349)"
-     id="timeText"
-     y="13.911547"
-     x="189.93102"
-     style="font-style:normal;font-weight:normal;font-size:9.59118px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
-     xml:space="preserve"><tspan
-       style="stroke-width:0.274403"
-       y="13.911547"
-       x="189.93102"
-       id="tspan1007"
-       sodipodi:role="line">00:00,000 </tspan></text>
+  <g
+     id="pauseIcon">
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff880c;stroke-width:1.49804753;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M 163.60376,8.4731524 V 11.923196"
+       id="path1035" />
+    <path
+       id="path1035-4"
+       d="M 166.68697,8.4731524 V 11.923196"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff880c;stroke-width:1.49804753;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+  </g>
 </g>
 <text
    xml:space="preserve"
@@ -509,5 +507,18 @@
      x="508.13242"
      y="181.08356"
      style="stroke-width:0.264583">Texte spécial 4 </tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:9.418px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+   x="84.088623"
+   y="19.660976"
+   id="timeText"
+   inkscape:label="#timeText"
+   onclick="logCurrentTime();"><tspan
+     sodipodi:role="line"
+     id="tspan1007"
+     x="84.088623"
+     y="19.660976"
+     style="stroke-width:0.269449">00:00,000 </tspan></text>
 </g>
 </svg>
