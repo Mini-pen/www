@@ -119,12 +119,14 @@ function initPage() {
 	pauseIcon = getSvgElem('pauseIcon');
 	
 	playPauseButtonText.textContent = "Play";
-	toggleVisibilty(pauseIcon);
+	pauseIcon.setAttributeNS(null, 'visibility', 'hidden');
 	
 	audioFileName = 'audio/navire_de_sang.wav';	
 	console.log("Chargement du fichier son : \n", audioFileName);
 	audio = new Audio(audioFileName);
 	audioInit = true;
+	
+	resetTimer();
 }
 
 function getSvgElem(elemId)
