@@ -56,7 +56,7 @@ function resetTimer(){
   running = 0;
 }
 
-function computePrintabletime(time) {
+function computePrintableTime(time) {
   // var days = Math.floor(time / (1000 * 60 * 60 * 24));
   var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
@@ -76,7 +76,7 @@ function getShowTime(){
   } else {
     difference =  updatedTime - startTime;
   }
-  if (timeText != null) timeText.textContent = computePrintabletime(difference);
+  if (timeText != null) timeText.textContent = computePrintableTime(difference);
  }
 
 function initPage() {
@@ -202,8 +202,8 @@ function playPauseAnim(){
 
 function logCurrentTime() {
 	if (audioInit)	{		
-		console.log("Current audio time : ", audio.currentTime)
-		console.log("Current stopwatchtime : ", computePrintabletime(difference) );
+		console.log("Current audio time : ", computePrintableTime(audio.currentTime*1000))
+		console.log("Current stopwatchtime : ", computePrintableTime(difference) );
 	}
 }
 
