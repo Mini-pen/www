@@ -243,7 +243,7 @@ function logCurrentTime() {
 		console.log("Current stopwatchtime : ", computePrintableTime(difference) );
 		console.log("Current audio time : ", computePrintableTime(audio.currentTime*1000));
 		console.log("Current Delay : ", computePrintableTime(difference-(audio.currentTime*1000)));
-		console.log("Corection Delay : ", audioTimeDelay;
+		console.log("Corection Delay : ", audioTimeDelay);
 	}
 }
 
