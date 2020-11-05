@@ -56,6 +56,19 @@ function resetTimer(){
   running = 0;
 }
 
+function computePrintabletime(time) {
+  // var days = Math.floor(time / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((time % (1000 * 60)) / 1000);
+  var milliseconds = Math.floor((time % (1000 * 60)) / 100);
+  hours = (hours < 10) ? "0" + hours : hours;
+  minutes = (minutes < 10) ? "0" + minutes : minutes;
+  seconds = (seconds < 10) ? "0" + seconds : seconds;
+  milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
+  return hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
+}
+
 function getShowTime(){
   updatedTime = new Date().getTime();
   if (savedTime){
@@ -63,16 +76,7 @@ function getShowTime(){
   } else {
     difference =  updatedTime - startTime;
   }
-  // var days = Math.floor(difference / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-  var milliseconds = Math.floor((difference % (1000 * 60)) / 100);
-hours = (hours < 10) ? "0" + hours : hours;
-  minutes = (minutes < 10) ? "0" + minutes : minutes;
-  seconds = (seconds < 10) ? "0" + seconds : seconds;
-  milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
-  if (timeText != null) timeText.textContent = hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
+  if (timeText != null) timeText.textContent = computePrintabletime(difference);
  }
 
 function initPage() {
@@ -197,7 +201,7 @@ function playPauseAnim(){
 function logCurrentTime() {
 	if (audioInit)	{		
 		console.log("Current audio time : ", audio.currentTime)
-		console.log("Current stopwatchtime : ", );
+		console.log("Current stopwatchtime : ", computePrintabletime(difference) );
 	}
 }
 
