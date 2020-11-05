@@ -136,7 +136,7 @@ function initPage() {
 	pauseIcon = getSvgElem('pauseIcon');
 	
 	playPauseButtonText.textContent = "Play";
-	pauseIcon.classList.toggle("invisible");
+	toggleVisibilty(pauseIcon);
 	
 	audioFileName = 'audio/navire_de_sang.wav';	
 	console.log("Chargement du fichier son : \n", audioFileName);
@@ -163,6 +163,13 @@ function globalExists(varName) {
   } catch (e) {
     return false;
   }
+}
+
+function toggleVisibilty(svgElem) {
+	var newValue = svgElem.getAttributeNS(null, 'visibility')
+	if ('hidden' != newValue) { newValue = 'hidden'; }
+	else { newValue = 'visible'; }
+	svgElem.setAttributeNS(null, 'visibility', newValue);
 }
 
 function animTest()
@@ -222,16 +229,16 @@ function playPauseAudio()
 		if (audio.paused) {	
 			console.log("Audio -> play. Current position is : ", audio.currentTime); 
 			audio.play();				
-			playPauseButtonText.textContent = "Pause";			
-			playIcon.classList.toggle("invisible");		
-			pauseIcon.classList.toggle("invisible");
+			playPauseButtonText.textContent = "Pause";
+			toggleVisibilty(playIcon);
+			toggleVisibilty(pauseIcon);
 		}
 		else {	
 			//console.log("Audio -> pause. Current position is : ", audio.currentTime); 
 			audio.pause(); 
-			playPauseButtonText.textContent = "Play";		
-			playIcon.classList.toggle("invisible");		
-			pauseIcon.classList.toggle("invisible");
+			playPauseButtonText.textContent = "Play";	
+			toggleVisibilty(playIcon);
+			toggleVisibilty(pauseIcon);
 		}
 	}
 }
