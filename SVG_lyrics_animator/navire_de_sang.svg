@@ -48,9 +48,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="47.919182"
-     inkscape:cx="436.64523"
-     inkscape:zoom="3.1740996"
+     inkscape:cy="42.360363"
+     inkscape:cx="281.03056"
+     inkscape:zoom="1.1222137"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -530,18 +530,18 @@
    onclick="logCurrentTime();"
    inkscape:label="#delayText"
    id="delayText"
-   y="10.471189"
-   x="117.38459"
-   style="font-style:normal;font-weight:normal;font-size:7.43422px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+   y="10.195448"
+   x="97.489288"
+   style="font-style:normal;font-weight:normal;font-size:6.18734px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
    xml:space="preserve"><tspan
      style="stroke-width:0.269449"
-     y="10.471189"
-     x="117.38459"
+     y="10.195448"
+     x="97.489288"
      id="tspan1007-7"
-     sodipodi:role="line">02:216 </tspan></text>
+     sodipodi:role="line">00:00:02:216 </tspan></text>
 <g
    onclick="subDelay();"
-   transform="translate(0.16671394,-16.838108)"
+   transform="translate(-20.470793,-16.838108)"
    id="subDelayButton">
   <ellipse
      ry="2.8670845"
@@ -565,8 +565,8 @@
 </g>
 <g
    onclick="addDelay();"
-   transform="translate(0.16671394,-16.838108)"
-   id="g1188">
+   transform="translate(-3.5374529,-16.838108)"
+   id="addDelayButton">
   <ellipse
      onclick="timerCalibrate();"
      style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
@@ -587,5 +587,15 @@
        id="tspan1155-5"
        sodipodi:role="line">+</tspan></text>
 </g>
+<rect
+   onclick="showHideGui();"
+   ry="0"
+   rx="0"
+   y="2.98508"
+   x="5.7244749"
+   height="7.7803807"
+   width="13.20307"
+   id="showHideButton"
+   style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.465001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1" />
 </g>
 </svg>

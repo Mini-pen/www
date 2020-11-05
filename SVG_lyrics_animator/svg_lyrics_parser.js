@@ -8,10 +8,15 @@ var audioFileName;
 
 //global var for direct access to svg elems
 var playPauseButtonText;
-var timeText;
-var delayText;
 var playIcon;
 var pauseIcon;
+
+var timeText;
+var delayText;
+var loadJsonButton;
+var playButton;
+var subDelayButton;
+var addDelayButton;
 
 //var startTimerButton = document.querySelector('.startTimer');
 //var pauseTimerButton = document.querySelector('.pauseTimer');
@@ -24,6 +29,63 @@ var tInterval;
 var savedTime;
 var paused = 0;
 var running = 0;
+
+
+function initPage() {
+	loadJSON(function(response) {
+		// Parse JSON string into object
+		//window.alert("before parse");
+		//window.alert("contenu du json :\n" + response);
+		console.log("contenu du json :\n",response);
+		var json_root = null;
+		try {
+           // null
+			json_root = JSON.parse(response);
+		} catch (e) {
+		console.error("Erreur lors du parse :", e); 
+		}
+		//window.alert("after parse :\n");
+		
+		for (var key in json_root.Lyrics) {
+			//TODO populate timeEvent table
+		}
+			//TODO populate 
+		    // for (var key in json_root.Effects){			
+			// var attrName = key;
+			// var attrValue = json_root[key];
+			// if( (typeof attrValue) === 'string') {
+				// setTextValue(attrName,attrValue);
+			// }
+			// else {
+				// if( (typeof attrValue) === 'number')
+				// setNumberValue(attrName,attrValue, 8);
+			// }
+		// }				
+		
+		window.alert("Init fini !");
+	});
+		
+	playPauseButtonText = getSvgElem("play-pause-button-text");
+	timeText = getSvgElem("timeText");
+	delayText = getSvgElem("delayText");
+	playIcon = getSvgElem('playIcon');
+	pauseIcon = getSvgElem('pauseIcon');
+	
+	loadJsonButton = getSvgElem("loadJsonButton");
+	playButton = getSvgElem("playButton");
+	subDelayButton = getSvgElem("subDelayButton");
+	addDelayButton = getSvgElem("addDelayButton");
+		
+	playPauseButtonText.textContent = "Play";
+	pauseIcon.setAttributeNS(null, 'visibility', 'hidden');
+	
+	audioFileName = 'audio/navire_de_sang.wav';	
+	console.log("Chargement du fichier son : \n", audioFileName);
+	audio = new Audio(audioFileName);
+	audioInit = true;
+	
+	resetTimer();
+}
 
 function startTimer(){
   if(!running){
@@ -82,55 +144,16 @@ function getShowTime(){
   if (delayText != null) delayText.textContent = computePrintableTime(difference-(audio.currentTime*1000));
  }
 
-function initPage() {
-	loadJSON(function(response) {
-		// Parse JSON string into object
-		//window.alert("before parse");
-		//window.alert("contenu du json :\n" + response);
-		console.log("contenu du json :\n",response);
-		var json_root = null;
-		try {
-           // null
-			json_root = JSON.parse(response);
-		} catch (e) {
-		console.error("Erreur lors du parse :", e); 
-		}
-		//window.alert("after parse :\n");
-		
-		for (var key in json_root.Lyrics) {
-			//TODO populate timeEvent table
-		}
-			//TODO populate 
-		    // for (var key in json_root.Effects){			
-			// var attrName = key;
-			// var attrValue = json_root[key];
-			// if( (typeof attrValue) === 'string') {
-				// setTextValue(attrName,attrValue);
-			// }
-			// else {
-				// if( (typeof attrValue) === 'number')
-				// setNumberValue(attrName,attrValue, 8);
-			// }
-		// }				
-		
-		window.alert("Init fini !");
-	});
-		
-	playPauseButtonText = getSvgElem("play-pause-button-text");
-	timeText = getSvgElem("timeText");
-	delayText = getSvgElem("delayText");
-	playIcon = getSvgElem('playIcon');
-	pauseIcon = getSvgElem('pauseIcon');
-	
-	playPauseButtonText.textContent = "Play";
-	pauseIcon.setAttributeNS(null, 'visibility', 'hidden');
-	
-	audioFileName = 'audio/navire_de_sang.wav';	
-	console.log("Chargement du fichier son : \n", audioFileName);
-	audio = new Audio(audioFileName);
-	audioInit = true;
-	
-	resetTimer();
+
+showHideGui() {
+	//playIcon;
+	//pauseIcon;
+	toggleVisibilty(timeText);
+	toggleVisibilty(delayText);
+	toggleVisibilty(loadJsonButton);
+	toggleVisibilty(playButton);
+	toggleVisibilty(subDelayButton);
+	toggleVisibilty(addDelayButton);
 }
 
 function getSvgElem(elemId)
