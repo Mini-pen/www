@@ -2,6 +2,8 @@
 
 var audioInit = false;
 var audio;
+var playPauseButtonText;
+var timeText;
 
 //var startTimerButton = document.querySelector('.startTimer');
 //var pauseTimerButton = document.querySelector('.pauseTimer');
@@ -31,7 +33,8 @@ function startTimer(){
     // pauseTimerButton.style.cursor = "pointer";
   }
 }
-function pauseTimer(){
+
+function playPauseTimer(){
   if (!difference){
     // if timer never started, don't allow pause button to do anything
   } else if (!paused) {
@@ -82,6 +85,7 @@ hours = (hours < 10) ? "0" + hours : hours;
   minutes = (minutes < 10) ? "0" + minutes : minutes;
   seconds = (seconds < 10) ? "0" + seconds : seconds;
   milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
+  if (timeText != null) timeText.textContent = hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
   //timerDisplay.innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
 }
 
@@ -118,6 +122,10 @@ function initPage() {
 		
 		window.alert("Init fini !");
 	});
+	
+	
+	playPauseButtonText = document.getElementById("play-pause-button-text");
+	timeText = document.getElementById("timeText");
 	
 	audioFileName = 'audio/navire_de_sang.wav';	
 	console.log("Chargement du fichier son : \n" + audioFileName);
@@ -159,16 +167,17 @@ function play()
 {
 	playPauseAudio();
 	playPauseAnim();
+	playPauseTimer();
 }
 
 function playPauseAnim(){
-	if (!animInit)	{
-		var animInit = false;
-		var animIsPlaying = false;
-		//var audio = new Audio(audioFileName);
-		animTest();
-		animInit = true;
-	}
+	// if (animInit)	{
+		// var animInit = false;
+		// var animIsPlaying = false;
+		var audio = new Audio(audioFileName);
+		// animTest();
+		// animInit = true;
+	// }
 	
 	if (animIsPlaying) {	
 	//audio.pause(); 
@@ -183,7 +192,7 @@ function playPauseAnim(){
 function logCurrentTime() {
 	if (globalExists(audioInit)) {
 		if (audioInit)	{		
-			console.log("Current Time : ")
+			console.log("Current audio time : ")
 			console.log(audio.currentTime);
 		}
 	}
@@ -202,13 +211,15 @@ function playPauseAudio()
 	if (globalExists(audioInit)) {
 		if (audioInit)	{		
 			if (audio.paused) {	
-				//console.log("Audio -> play. Current position is : ", audio.currentTime); 
-				audio.play(); 
+				console.log("Audio -> play. Current position is : ", audio.currentTime); 
+				audio.play();				
+				if (playPauseButtonText != null) playPauseButtonText.textContent = "Pause";
 				audioIsPlaying = true;
 			}
 			else {	
 				//console.log("Audio -> pause. Current position is : ", audio.currentTime); 
 				audio.pause(); 
+				if (playPauseButtonText != null) playPauseButtonText.textContent = "Play";
 				audioIsPlaying = false;
 			}
 		}
