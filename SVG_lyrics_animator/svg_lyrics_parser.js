@@ -135,6 +135,9 @@ function initPage() {
 	playIcon = getSvgElem('playIcon');
 	pauseIcon = getSvgElem('pauseIcon');
 	
+	playPauseButtonText.textContent = "Play";
+	pauseIcon.classList.toggle("invisible");
+	
 	audioFileName = 'audio/navire_de_sang.wav';	
 	console.log("Chargement du fichier son : \n", audioFileName);
 	audio = new Audio(audioFileName);
@@ -207,28 +210,28 @@ function playPauseAnim(){
 }
 
 function logCurrentTime() {
-	if (globalExists(audioInit)) {
-		if (audioInit)	{		
-			console.log("Current audio time : ")
-			console.log(audio.currentTime);
-		}
+	if (audioInit)	{		
+		console.log("Current audio time : ")
+		console.log(audio.currentTime);
 	}
 }
 
 function playPauseAudio()
 {
-	if (globalExists(audioInit)) {
-		if (audioInit)	{		
-			if (audio.paused) {	
-				console.log("Audio -> play. Current position is : ", audio.currentTime); 
-				audio.play();				
-				if (playPauseButtonText != null) playPauseButtonText.textContent = "Pause";
-			}
-			else {	
-				//console.log("Audio -> pause. Current position is : ", audio.currentTime); 
-				audio.pause(); 
-				if (playPauseButtonText != null) playPauseButtonText.textContent = "Play";
-			}
+	if (audioInit)	{		
+		if (audio.paused) {	
+			console.log("Audio -> play. Current position is : ", audio.currentTime); 
+			audio.play();				
+			playPauseButtonText.textContent = "Pause";			
+			playIcon.classList.toggle("invisible");		
+			pauseIcon.classList.toggle("invisible");
+		}
+		else {	
+			//console.log("Audio -> pause. Current position is : ", audio.currentTime); 
+			audio.pause(); 
+			playPauseButtonText.textContent = "Play";		
+			playIcon.classList.toggle("invisible");		
+			pauseIcon.classList.toggle("invisible");
 		}
 	}
 }
