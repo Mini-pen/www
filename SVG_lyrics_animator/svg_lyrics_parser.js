@@ -19,6 +19,7 @@ var pauseIcon;
 var startTime;
 var updatedTime;
 var difference;
+var audioTimeDelay = 0;
 var tInterval;
 var savedTime;
 var paused = 0;
@@ -71,7 +72,7 @@ function computePrintableTime(time) {
 }
 
 function getShowTime(){
-  updatedTime = new Date().getTime();
+  updatedTime = new Date().getTime()+audioTimeDelay;
   if (savedTime){
     difference = (updatedTime - startTime) + savedTime;
   } else {
@@ -211,13 +212,12 @@ function logCurrentTime() {
 	}
 }
 
-
 function subDelay() {
-	difference = difference - 10;
+	audioTimeDelay = audioTimeDelay - 10;
 }
 
 function addDelay() {
-	difference = difference + 10;
+	audioTimeDelay = audioTimeDelay + 10;
 }
 
 function timerCalibrate() {
