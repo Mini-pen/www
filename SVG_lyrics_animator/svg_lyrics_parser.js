@@ -205,6 +205,7 @@ function logCurrentTime() {
 		console.log("Current stopwatchtime : ", computePrintableTime(difference) );
 		console.log("Current audio time : ", computePrintableTime(audio.currentTime*1000))
 		console.log("Delay : ", computePrintableTime(difference-(audio.currentTime*1000)))
+		timerCalibrate();
 	}
 }
 

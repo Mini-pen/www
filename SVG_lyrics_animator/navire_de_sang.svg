@@ -14,8 +14,7 @@
    version="1.1"
    viewBox="0 0 344.22291 196.05626"
    height="741"
-   width="1301"
-   onload="initPage();">
+   width="1301">
   <script
      xlink:href="svg_lyrics_parser.js"
      id="script2" />
@@ -46,11 +45,11 @@
      inkscape:window-width="1366"
      inkscape:snap-global="false"
      showgrid="false"
-     inkscape:current-layer="playButton"
+     inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="71.986377"
-     inkscape:cx="229.85274"
-     inkscape:zoom="4.4888547"
+     inkscape:cy="19.24077"
+     inkscape:cx="394.96063"
+     inkscape:zoom="1.5870498"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -91,6 +90,7 @@
        id=&quot;rect2087&quot;
        style=&quot;fill:#f9f9f9;stroke:#0a001a;stroke-width:0.264583;stroke-opacity:1&quot; /&gt;
     <g
+   onload="initPage();"
    onclick="initPage();"
    onmouseout="style.stroke = &quot;#000000&quot;;"
    onmouseover="style.stroke = &quot;#CC0000&quot;; "
@@ -525,5 +525,13 @@
      x="84.088623"
      y="19.660976"
      style="stroke-width:0.269449">00:00,000 </tspan></text>
+<ellipse
+   onclick="timerCalibrate();"
+   style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.464999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+   id="timerCalibrateButton"
+   cx="136.45639"
+   cy="16.184086"
+   rx="2.1513891"
+   ry="2.0335147" />
 </g>
 </svg>
