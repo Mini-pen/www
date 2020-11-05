@@ -117,6 +117,7 @@ function initPage() {
 		
 	playPauseButtonText = getSvgElem("play-pause-button-text");
 	timeText = getSvgElem("timeText");
+	delayText = getSvgElem("delayText");
 	playIcon = getSvgElem('playIcon');
 	pauseIcon = getSvgElem('pauseIcon');
 	
