@@ -143,7 +143,7 @@ function initPage() {
 
 function getSvgElem(elemId)
 {
-	svgElem = document.getElementById(elemId);
+	var svgElem = document.getElementById(elemId);
 	if(svgElem == null) {
 	console.error("Erreur dans le fichier svg. Impossible de trouver l'élément :", elemId);
 	}
