@@ -49,7 +49,7 @@
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
      inkscape:cy="-25.336403"
-     inkscape:cx="146.64743"
+     inkscape:cx="432.33703"
      inkscape:zoom="1.5870498"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -525,23 +525,23 @@
      id="tspan1007"
      x="84.088623"
      y="19.660976"
-     style="stroke-width:0.269449">00:00:02:216 </tspan></text>
+     style="stroke-width:0.269449">00:00:00:000 </tspan></text>
 <text
    onclick="logCurrentTime();"
    inkscape:label="#delayText"
    id="delayText"
-   y="10.195448"
-   x="97.489288"
+   y="9.6953068"
+   x="115.39314"
    style="font-style:normal;font-weight:normal;font-size:6.18734px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
    xml:space="preserve"><tspan
      style="stroke-width:0.269449"
-     y="10.195448"
-     x="97.489288"
+     y="9.6953068"
+     x="115.39314"
      id="tspan1007-7"
-     sodipodi:role="line">00:00:02:216 </tspan></text>
+     sodipodi:role="line">00:00:000 </tspan></text>
 <g
    onclick="subDelay();"
-   transform="translate(-20.470793,-16.838108)"
+   transform="translate(-24.573154,-17.243468)"
    id="subDelayButton">
   <ellipse
      ry="2.8670845"
@@ -558,7 +558,7 @@
 </g>
 <g
    onclick="addDelay();"
-   transform="translate(-4.0666196,-16.838108)"
+   transform="translate(-37.253136,-17.132697)"
    id="addDelayButton">
   <ellipse
      onclick="timerCalibrate();"
@@ -587,5 +587,18 @@
    width="13.20307"
    id="showHideButton"
    style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.465001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1" />
+<text
+   transform="translate(-1.5004255,0.16671394)"
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:6.18733px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:0;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+   x="104.60503"
+   y="9.695303"
+   id="CorrectionDelayText"
+   inkscape:label="#delayText"
+   onclick="logCurrentTime();"><tspan
+     id="tspan1007-7-3"
+     x="106.57482"
+     y="9.695303"
+     style="text-align:end;text-anchor:end;stroke-width:0.269449">000 </tspan></text>
 </g>
 </svg>

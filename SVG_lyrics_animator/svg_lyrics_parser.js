@@ -13,6 +13,7 @@ var pauseIcon;
 
 var timeText;
 var delayText;
+var correctionDelayText;
 var loadJsonButton;
 var playButton;
 var subDelayButton;
@@ -68,6 +69,7 @@ function initPage() {
 	playPauseButtonText = getSvgElem("play-pause-button-text");
 	timeText = getSvgElem("timeText");
 	delayText = getSvgElem("delayText");
+	correctionDelayText = getSvgElem("correctionDelayText");
 	playIcon = getSvgElem('playIcon');
 	pauseIcon = getSvgElem('pauseIcon');
 	
@@ -133,15 +135,25 @@ function computePrintableTime(time) {
   return hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
 }
 
+function computeShortPrintableTime(time) {
+  var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((time % (1000 * 60)) / 1000);
+  var milliseconds = Math.floor(time % (1000));
+  minutes = (minutes < 10) ? "0" + minutes : minutes;
+  seconds = (seconds < 10) ? "0" + seconds : seconds;
+  milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
+  return minutes + ':' + seconds + ':' + milliseconds;
+}
+
 function getShowTime(){
-  updatedTime = new Date().getTime()+audioTimeDelay;
+  updatedTime = new Date().getTime() + audioTimeDelay;
   if (savedTime){
     difference = (updatedTime - startTime) + savedTime;
   } else {
     difference =  updatedTime - startTime;
   }
   if (timeText != null) timeText.textContent = computePrintableTime(difference);
-  if (delayText != null) delayText.textContent = computePrintableTime(difference-(audio.currentTime*1000));
+  if (delayText != null) delayText.textContent = computeShortPrintableTime(difference-(audio.currentTime*1000));
  }
 
 function showHideGui() {
@@ -229,17 +241,20 @@ function playPauseAnim(){
 function logCurrentTime() {
 	if (audioInit)	{		
 		console.log("Current stopwatchtime : ", computePrintableTime(difference) );
-		console.log("Current audio time : ", computePrintableTime(audio.currentTime*1000))
-		console.log("Delay : ", computePrintableTime(difference-(audio.currentTime*1000)))
+		console.log("Current audio time : ", computePrintableTime(audio.currentTime*1000));
+		console.log("Current Delay : ", computePrintableTime(difference-(audio.currentTime*1000)));
+		console.log("Corection Delay : ", audioTimeDelay;
 	}
 }
 
 function subDelay() {
 	audioTimeDelay = audioTimeDelay - 10;
+	correctionDelayText.textContent = audioTimeDelay;
 }
 
 function addDelay() {
 	audioTimeDelay = audioTimeDelay + 10;
+	correctionDelayText.textContent = audioTimeDelay;
 }
 
 function timerCalibrate() {
