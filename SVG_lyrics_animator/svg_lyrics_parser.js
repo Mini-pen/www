@@ -9,6 +9,7 @@ var audioFileName;
 //global var for direct access to svg elems
 var playPauseButtonText;
 var timeText;
+var delayText;
 var playIcon;
 var pauseIcon;
 
