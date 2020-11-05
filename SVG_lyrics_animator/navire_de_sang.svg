@@ -14,7 +14,8 @@
    version="1.1"
    viewBox="0 0 344.22291 196.05626"
    height="741"
-   width="1301">
+   width="1301"
+   onload="initPage();">
   <script
      xlink:href="svg_lyrics_parser.js"
      id="script2" />
@@ -90,7 +91,6 @@
        id=&quot;rect2087&quot;
        style=&quot;fill:#f9f9f9;stroke:#0a001a;stroke-width:0.264583;stroke-opacity:1&quot; /&gt;
     <g
-   onload="initPage();"
    onclick="initPage();"
    onmouseout="style.stroke = &quot;#000000&quot;;"
    onmouseover="style.stroke = &quot;#CC0000&quot;; "

@@ -25,23 +25,17 @@ var running = 0;
 
 function startTimer(){
   if(!running){
+	console.log("Starting Timer");
     startTime = new Date().getTime();
     tInterval = setInterval(getShowTime, 1);
-// change 1 to 1000 above to run script every second instead of every millisecond. one other change will be needed in the getShowTime() function below for this to work. see comment there.   
+	// change 1 to 1000 above to run script every second instead of every millisecond. one other change will be needed in the getShowTime() function below for this to work. see comment there.   
  
     paused = 0;
     running = 1;
-// timerDisplay.style.background = "#FF0000";
-    // timerDisplay.style.cursor = "auto";
-    // timerDisplay.style.color = "yellow";
-    // startTimerButton.classList.add('lighter');
-    // pauseTimerButton.classList.remove('lighter');
-    // startTimerButton.style.cursor = "auto";
-    // pauseTimerButton.style.cursor = "pointer";
   }
 }
 
-function playPauseTimer(){
+function pauseTimer(){
   if (!difference){
     // if timer never started, don't allow pause button to do anything
   } else if (!paused) {
@@ -49,16 +43,9 @@ function playPauseTimer(){
     savedTime = difference;
     paused = 1;
     running = 0;
-    // timerDisplay.style.background = "#A90000";
-    // timerDisplay.style.color = "#690000";
-    // timerDisplay.style.cursor = "pointer";
-    // startTimerButton.classList.remove('lighter');
-    // pauseTimerButton.classList.add('lighter');
-    // startTimerButton.style.cursor = "pointer";
-    // pauseTimerButton.style.cursor = "auto";
   } else {
-// if the timer was already paused, when they click pause again, start the timer again
-startTimer();
+	// if the timer was already paused, when they click pause again, start the timer again
+	startTimer();
   }
 }
 function resetTimer(){
@@ -67,15 +54,8 @@ function resetTimer(){
   difference = 0;
   paused = 0;
   running = 0;
-  // timerDisplay.innerHTML = 'Start Timer!';
-  // timerDisplay.style.background = "#A90000";
-  // timerDisplay.style.color = "#fff";
-  // timerDisplay.style.cursor = "pointer";
-  // startTimerButton.classList.remove('lighter');
-  // pauseTimerButton.classList.remove('lighter');
-  // startTimerButton.style.cursor = "pointer";
-  // pauseTimerButton.style.cursor = "auto";
 }
+
 function getShowTime(){
   updatedTime = new Date().getTime();
   if (savedTime){
@@ -93,8 +73,7 @@ hours = (hours < 10) ? "0" + hours : hours;
   seconds = (seconds < 10) ? "0" + seconds : seconds;
   milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
   if (timeText != null) timeText.textContent = hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
-  //timerDisplay.innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
-}
+ }
 
 function initPage() {
 	loadJSON(function(response) {
@@ -194,7 +173,6 @@ function play()
 {
 	playPauseAudio();
 	playPauseAnim();
-	playPauseTimer();
 }
 
 function playPauseAnim(){
@@ -218,8 +196,8 @@ function playPauseAnim(){
 
 function logCurrentTime() {
 	if (audioInit)	{		
-		console.log("Current audio time : ")
-		console.log(audio.currentTime);
+		console.log("Current audio time : ", audio.currentTime)
+		console.log("Current stopwatchtime : ", );
 	}
 }
 
@@ -232,13 +210,15 @@ function playPauseAudio()
 			playPauseButtonText.textContent = "Pause";
 			toggleVisibilty(playIcon);
 			toggleVisibilty(pauseIcon);
+			startTimer();
 		}
 		else {	
-			//console.log("Audio -> pause. Current position is : ", audio.currentTime); 
+			console.log("Audio -> pause. Current position is : ", audio.currentTime); 
 			audio.pause(); 
 			playPauseButtonText.textContent = "Play";	
 			toggleVisibilty(playIcon);
 			toggleVisibilty(pauseIcon);
+			pauseTimer();
 		}
 	}
 }
