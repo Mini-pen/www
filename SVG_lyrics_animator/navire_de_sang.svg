@@ -97,7 +97,7 @@
    onmouseover="style.stroke = &quot;#CC0000&quot;; "
    style="stroke-width:1.01839"
    transform="matrix(0.98188091,0,0,0.98200871,-144.56547,5.851307)"
-   id="g4730"
+   id="loadJsonButton"
    onmousedown="style.stroke = &quot;#CC00BB&quot;; "
    onmouseup="style.stroke = &quot;#000000&quot;;">
   <rect
