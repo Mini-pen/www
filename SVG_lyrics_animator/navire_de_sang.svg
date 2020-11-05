@@ -158,13 +158,13 @@
      inkscape:label="#cadre_image" />
   <text
      inkscape:label="#play-pause-button-text"
-     transform="matrix(1.0000651,0,0,0.99993491,-4.9224574,0)"
+     transform="matrix(1.0000651,0,0,0.99993491,-10.695331,0)"
      id="play-pause-button-text"
      y="11.974427"
-     x="173.28593"
+     x="178.24126"
      style="font-style:normal;font-weight:normal;font-size:5.06159px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:15.5531;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
      xml:space="preserve"><tspan
-       x="173.28593"
+       x="178.24126"
        y="11.974427"><tspan
          style="text-align:center;text-anchor:middle;stroke-width:0.274403">Play</tspan></tspan></text>
   <path
@@ -172,7 +172,7 @@
      d="M 163.61427,12.035725 V 8.3047748 l 3.2456,1.8793952 z"
      id="playIcon" />
   <text
-     onclick="logCurrentTime()"
+     onclick="logCurrentTime();"
      inkscape:label="#timeText"
      transform="scale(1.0000651,0.9999349)"
      id="timeText"

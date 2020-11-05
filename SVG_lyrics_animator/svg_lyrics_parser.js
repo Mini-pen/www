@@ -1,13 +1,16 @@
 "use strict";
-
 var audioInit = false;
 var audio;
-var playPauseButtonText;
-var timeText;
 
 var animInit = false;
 var animIsPlaying = false;
 var audioFileName;
+
+//global var for direct access to svg elems
+var playPauseButtonText;
+var timeText;
+var playIcon;
+var pauseIcon;
 
 //var startTimerButton = document.querySelector('.startTimer');
 //var pauseTimerButton = document.querySelector('.pauseTimer');
@@ -98,7 +101,7 @@ function initPage() {
 		// Parse JSON string into object
 		//window.alert("before parse");
 		//window.alert("contenu du json :\n" + response);
-		console.error("contenu du json :\n" + response);
+		console.log("contenu du json :\n",response);
 		var json_root = null;
 		try {
            // null
@@ -126,15 +129,25 @@ function initPage() {
 		
 		window.alert("Init fini !");
 	});
-	
-	
-	playPauseButtonText = document.getElementById("play-pause-button-text");
-	timeText = document.getElementById("timeText");
+		
+	playPauseButtonText = getSvgElem("play-pause-button-text");
+	timeText = getSvgElem("timeText");
+	playIcon = getSvgElem('playIcon');
+	pauseIcon = getSvgElem('pauseIcon');
 	
 	audioFileName = 'audio/navire_de_sang.wav';	
-	console.log("Chargement du fichier son : \n" + audioFileName);
+	console.log("Chargement du fichier son : \n", audioFileName);
 	audio = new Audio(audioFileName);
 	audioInit = true;
+}
+
+function getSvgElem(elemId)
+{
+	svgElem = document.getElementById(elemId);
+	if(svgElem == null) {
+	console.error("Erreur dans le fichier svg. Impossible de trouver l'élément :", elemId);
+	}
+	else return svgElem;
 }
 
 function globalExists(varName) {
@@ -204,27 +217,17 @@ function logCurrentTime() {
 
 function playPauseAudio()
 {
-	//if (!globalExists(audio))
-	// if (!audioInit)	{
-		// var audioInit = false;
-		// var audioIsPlaying = false;		
-		// console.log("Chargement du fichier son : \n" + audioFileName);
-		// var audio = new Audio(audioFileName);
-		// audioInit = true;
-	// }
 	if (globalExists(audioInit)) {
 		if (audioInit)	{		
 			if (audio.paused) {	
 				console.log("Audio -> play. Current position is : ", audio.currentTime); 
 				audio.play();				
 				if (playPauseButtonText != null) playPauseButtonText.textContent = "Pause";
-				audioIsPlaying = true;
 			}
 			else {	
 				//console.log("Audio -> pause. Current position is : ", audio.currentTime); 
 				audio.pause(); 
 				if (playPauseButtonText != null) playPauseButtonText.textContent = "Play";
-				audioIsPlaying = false;
 			}
 		}
 	}
