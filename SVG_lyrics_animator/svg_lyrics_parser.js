@@ -208,6 +208,11 @@ function logCurrentTime() {
 	}
 }
 
+
+function timerCalibrate() {
+	difference = audio.currentTime*1000;
+}
+
 function playPauseAudio()
 {
 	if (audioInit)	{		
@@ -218,6 +223,7 @@ function playPauseAudio()
 			toggleVisibilty(playIcon);
 			toggleVisibilty(pauseIcon);
 			startTimer();
+			timerCalibrate();
 		}
 		else {	
 			console.log("Audio -> pause. Current position is : ", audio.currentTime); 
