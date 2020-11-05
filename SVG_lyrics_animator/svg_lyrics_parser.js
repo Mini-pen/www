@@ -174,7 +174,7 @@ function playPauseAnim(){
 	// if (animInit)	{
 		// var animInit = false;
 		// var animIsPlaying = false;
-		var audio = new Audio(audioFileName);
+		//var audio = new Audio(audioFileName);
 		// animTest();
 		// animInit = true;
 	// }
