@@ -59,7 +59,7 @@
      inkscape:window-width="1366"
      inkscape:snap-global="false"
      showgrid="false"
-     inkscape:current-layer="positionBar"
+     inkscape:current-layer="layer1"
      inkscape:document-units="mm"
      inkscape:cy="73.863133"
      inkscape:cx="50.560852"
@@ -643,10 +643,10 @@
      id="tspan2949-29-1-3"
      sodipodi:role="line">Texte vertical 12 </svg:tspan></svg:text>
 <svg:g
-   id="positionBar">
+   id="positionScrollBar">
   <svg:rect
      style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.464999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
-     id="PositionBarBackground"
+     id="positionScrollBarBackground"
      width="123.28497"
      height="6.0017014"
      x="14.263898"

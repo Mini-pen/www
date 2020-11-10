@@ -84,6 +84,10 @@ function initPage() {
 	addDelayButton = getSvgElem("addDelayButton");
 	
 	positionScroller = getSvgElem("positionScroller");
+	var scrollBar = getSvgElem("positionScrollBar");
+	minX_CursorPosition = positionScroller.getAttributeNS('x');
+	maxX_CursorPosition = scrollBar.getAttributeNS('x') + scrollBar.getBBox() - cursorPositionMarginInBar - positionScroller.getBBox();
+	console.log("minX_CursorPosition = ", minX_CursorPosition, "maxX_CursorPosition = ", maX_CursorPosition);
 		
 	playPauseButtonText.textContent = "Play";
 	pauseIcon.setAttributeNS(null, 'opacity', '0');	
