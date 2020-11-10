@@ -209,8 +209,8 @@ function showHideGui() {
 	// toggleVisibilty(correctionDelayText);	
 }
 
-function getMousePosition(evt) {
-  var CTM = svg.getScreenCTM();
+function getMousePosition(evt,elem) {
+  var CTM = elem.getScreenCTM();
   return {
     x: (evt.clientX - CTM.e) / CTM.a,
     y: (evt.clientY - CTM.f) / CTM.d
@@ -220,7 +220,7 @@ function getMousePosition(evt) {
 function startDragScroller(evt) {	
 	console.log("start moving scroller");
 	selectedElement = evt.target;
-    offset = getMousePosition(evt);
+    offset = getMousePosition(evt, selectedElement);
     offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
 }
 
@@ -233,7 +233,7 @@ function moveScroller(evt) {
 	if (selectedElement) {
 		console.log("moving scroller to ", coord.x - offset.x);
 		evt.preventDefault();
-		var coord = getMousePosition(evt);
+		var coord = getMousePosition(evt, selectedElement);
 		selectedElement.setAttributeNS(null, "x", coord.x - offset.x);
 		if (audioInit) {
 			audio.currentTime = (( coord.x - offset.x )*audio.duration - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition);
