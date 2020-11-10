@@ -8,7 +8,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    onload="initPage();"
-   sodipodi:docname="navire_de_sang.svg"
+   sodipodi:docname="lyrics_animator_player.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
    version="1.1"
@@ -25,28 +25,17 @@
     </font-face>
   </font>
   <svg:script
-     xlink:href="svg_lyrics_parser.js"
+     xlink:href="svg_lyrics_animator.js"
      id="script2" />
   <svg:script
      id="script1"
      type="text/ecmascript">
     function changeColor(evt) {
     <!-- if evt.target.style.fill  -->
-
-
-
-
-
     evt.target.style.fill = &quot;#000000ff&quot;
     <!-- document.location.href = screen+".svg" -->
-
-
-
-
     return;
-    }
-	
-	
+    }	
    </svg:script>
   <svg:defs
      id="defs2" />

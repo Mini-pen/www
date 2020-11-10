@@ -100,7 +100,7 @@ function initPage() {
 	
 	correctionDelayText.textContent = audioTimeDelay;
 	
-	audioFileName = 'audio/navire_de_sang.wav';	
+	audioFileName = 'audio/Lève_le_poing.ogg audio/Lève_le_poing.mp3';	
 	console.log("Chargement du fichier son : \n", audioFileName);
 	audio = new Audio(audioFileName);
 	audioInit = true;
