@@ -26,7 +26,7 @@ var maxX_CursorPosition;
 //var timerDisplay = document.querySelector('.timer');
 var startTime;
 var updatedTime;
-var difference;
+var stopWatchTime;
 var audioTimeDelay = 0;
 var tInterval;
 var savedTime;
@@ -116,11 +116,11 @@ function startTimer(){
 }
 
 function pauseTimer(){
-  if (!difference){
+  if (!stopWatchTime){
     // if timer never started, don't allow pause button to do anything
   } else if (!paused) {
     clearInterval(tInterval);
-    savedTime = difference;
+    savedTime = stopWatchTime;
     paused = 1;
     running = 0;
   } else {
@@ -131,7 +131,7 @@ function pauseTimer(){
 function resetTimer(){
   clearInterval(tInterval);
   savedTime = 0;
-  difference = 0;
+  stopWatchTime = 0;
   paused = 0;
   running = 0;
 }
@@ -172,9 +172,9 @@ function computeShortPrintableTime(time) {
 function getShowTime(){
   updatedTime = new Date().getTime() + audioTimeDelay;
   if (savedTime){
-    difference = (updatedTime - startTime) + savedTime;
+    stopWatchTime = (updatedTime - startTime) + savedTime;
   } else {
-    difference =  updatedTime - startTime;
+    stopWatchTime =  updatedTime - startTime;
   }
   updateGUI();
  }
@@ -182,8 +182,8 @@ function getShowTime(){
 function updateGUI() {
 	if (svgGUI != null) {
 		if ('hidden' != svgGUI.getAttributeNS(null, 'visibility')) {
-			if (timeText != null) timeText.textContent = computePrintableTime(difference);
-			if (delayText != null) delayText.textContent = computeShortPrintableTime(difference-(audio.currentTime*1000));	
+			if (timeText != null) timeText.textContent = computePrintableTime(audio.currentTime);
+			if (delayText != null) delayText.textContent = computeShortPrintableTime(stopWatchTime-(audio.currentTime*1000));	
 
 			var newX = minX_CursorPosition + (maxX_CursorPosition - minX_CursorPosition) * audio.currentTime/audio.duration;
 			if (positionScroller != null) positionScroller.setAttributeNS(null,'x', newX);
@@ -210,10 +210,10 @@ function moveScroller() {
 
 function forward() {
 	if (audioInit)	{
-		var newPosition = audio.currentTime + 100;
-		if (newPosition > audio.duration) { audio.currentTime = audio.duration - 100;
+		var newPosition = audio.currentTime + 2;
+		if (newPosition > audio.duration) { audio.currentTime = audio.duration - 2;
 		} else {
-			console.log("Forward : audio.currentTime", audio.currentTime, "newPosition", newPosition);
+			//console.log("Forward : audio.currentTime", audio.currentTime, "newPosition", newPosition);
 			audio.currentTime = newPosition; 
 		}
 	}
@@ -221,10 +221,10 @@ function forward() {
 
 function rewind() {
 	if (audioInit)	{
-		var newPosition = audio.currentTime - 100;
+		var newPosition = audio.currentTime - 2;
 		if (newPosition < 0) { audio.currentTime = 0;
 		} else {			
-			console.log("Rewind : audio.currentTime", audio.currentTime, "newPosition", newPosition);
+			//console.log("Rewind : audio.currentTime", audio.currentTime, "newPosition", newPosition);
 			audio.currentTime = newPosition; 
 		}
 	}
@@ -310,9 +310,9 @@ function playPauseAnim(){
 
 function logCurrentTime() {
 	if (audioInit)	{		
-		console.log("Current stopwatchtime : ", computePrintableTime(difference) );
+		console.log("Current stopwatchtime : ", computePrintableTime(stopWatchTime) );
 		console.log("Current audio time : ", computePrintableTime(audio.currentTime*1000));
-		console.log("Current Delay : ", computePrintableTime(difference-(audio.currentTime*1000)));
+		console.log("Current Delay : ", computePrintableTime(stopWatchTime-(audio.currentTime*1000)));
 		console.log("Corection Delay : ", audioTimeDelay);
 	}
 }
@@ -328,7 +328,7 @@ function addDelay() {
 }
 
 function timerCalibrate() {
-	difference = audio.currentTime*1000;
+	stopWatchTime = audio.currentTime*1000;
 }
 
 function playPauseAudio()
