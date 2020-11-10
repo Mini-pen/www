@@ -59,7 +59,7 @@
      inkscape:window-width="1366"
      inkscape:snap-global="false"
      showgrid="false"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="positionScrollbar"
      inkscape:document-units="mm"
      inkscape:cy="202.60196"
      inkscape:cx="382.98014"
@@ -281,6 +281,7 @@
      inkscape:label="#positionScrollbar"
      id="positionScrollbar">
     <svg:rect
+       onclick="setCursorPosition(evt);"
        rx="1.5795873"
        ry="1.5004241"
        y="6.8761168"

@@ -231,24 +231,42 @@ function stopDragScroller(evt){
 }
 
 function moveScroller(evt) {
-		evt.preventDefault();
-		var coord = getMousePosition(evt, positionScroller);
-		var newposX = coord.x - offset.x;
-		
-		//stay in allowed boundaries
-		if (newposX < minX_CursorPosition) { newposX = minX_CursorPosition; }
-		if (newposX > maxX_CursorPosition) { newposX = maxX_CursorPosition; }
-		
-		positionScroller.setAttributeNS(null, "x", newposX);		
-		console.log("moving positionScroller to ", newposX);
-		if (audioInit) {
-			console.log("Change audio time from ", audio.currentTime); 
-			audio.currentTime = ((newposX - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition) ) * audio.duration;
-			console.log("to ", audio.currentTime);
-		}
-		updateGUI();
+	evt.preventDefault();
+	var coord = getMousePosition(evt, positionScroller);
+	var newposX = coord.x - offset.x;
+	
+	//stay in allowed boundaries
+	if (newposX < minX_CursorPosition) { newposX = minX_CursorPosition; }
+	if (newposX > maxX_CursorPosition) { newposX = maxX_CursorPosition; }
+	
+	positionScroller.setAttributeNS(null, "x", newposX);		
+	console.log("moving positionScroller to ", newposX);
+	if (audioInit) {
+		console.log("Change audio time from ", audio.currentTime); 
+		audio.currentTime = ((newposX - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition) ) * audio.duration;
+		console.log("to ", audio.currentTime);
+	}
+	updateGUI();
 }
 
+function setCursorPosition(evt) {	
+	evt.preventDefault();
+	var coord = getMousePosition(evt, positionScroller);
+	var newposX = coord.x - offset.x;
+	
+	//stay in allowed boundaries
+	if (newposX < minX_CursorPosition) { newposX = minX_CursorPosition; }
+	if (newposX > maxX_CursorPosition) { newposX = maxX_CursorPosition; }
+	
+	positionScroller.setAttributeNS(null, "x", newposX);		
+	console.log("moving positionScroller to ", newposX);
+	if (audioInit) {
+		console.log("Change audio time from ", audio.currentTime); 
+		audio.currentTime = ((newposX - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition) ) * audio.duration;
+		console.log("to ", audio.currentTime);
+	}
+	updateGUI();	
+}
 
 function mousePointerMove(evt) {
 	if (selectedElement) { drag(evt); }
