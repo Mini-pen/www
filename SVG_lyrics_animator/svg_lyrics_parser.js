@@ -252,7 +252,7 @@ function moveScroller(evt) {
 function setCursorPosition(evt) {	
 	evt.preventDefault();
 	var coord = getMousePosition(evt, positionScroller);
-	var newposX = coord.x - offset.x;
+	var newposX = coord.x - parseFloat(positionScroller.getAttributeNS(null, 'width'));
 	
 	//stay in allowed boundaries
 	if (newposX < minX_CursorPosition) { newposX = minX_CursorPosition; }
