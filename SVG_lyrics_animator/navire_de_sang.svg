@@ -59,11 +59,11 @@
      inkscape:window-width="1366"
      inkscape:snap-global="false"
      showgrid="false"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="positionScrollBar"
      inkscape:document-units="mm"
-     inkscape:cy="73.863133"
-     inkscape:cx="50.560852"
-     inkscape:zoom="6.3481993"
+     inkscape:cy="-7.166036"
+     inkscape:cx="333.11395"
+     inkscape:zoom="1.5870498"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -643,27 +643,41 @@
      id="tspan2949-29-1-3"
      sodipodi:role="line">Texte vertical 12 </svg:tspan></svg:text>
 <svg:g
+   style="stroke-width:1.04059"
+   transform="matrix(0.92350166,0,0,1,4.6278666,0)"
    id="positionScrollBar">
   <svg:rect
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.464999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.483874;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
      id="positionScrollBarBackground"
      width="123.28497"
      height="6.0017014"
      x="14.263898"
      y="20.079187"
      ry="1.5004241"
-     rx="1.4587516" />
+     rx="1.5795873" />
   <svg:rect
      onmousemove="moveScroller();"
      inkscape:label="#positionScroller"
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.483876;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
      id="positionScroller"
      width="1.8338534"
      height="4.6679902"
      x="15.013899"
      y="20.746042"
-     rx="0.91692668"
+     rx="0.9928804"
      ry="1.1253171" />
+  <svg:path
+     inkscape:label="#rewindButton"
+     id="rewindButton"
+     d="m 12.722451,24.891412 v -3.622751 l -2.609868,1.82489 z"
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.32211;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+     onclick="rewind();" />
+  <svg:path
+     onclick="forward();"
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.32211;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+     d="m 139.01059,24.891413 v -3.622751 l 2.60987,1.82489 z"
+     id="forwardButton"
+     inkscape:label="#forwardButton" />
 </svg:g>
 </svg:g>
 </svg:svg>

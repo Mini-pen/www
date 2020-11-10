@@ -7,6 +7,7 @@ var animIsPlaying = false;
 var audioFileName;
 
 //global var for direct access to svg elems
+var svgGUI;
 var playPauseButtonText;
 var playIcon;
 var pauseIcon;
@@ -14,11 +15,8 @@ var pauseIcon;
 var timeText;
 var delayText;
 var correctionDelayText;
-var loadJsonButton;
-var playButton;
-var subDelayButton;
-var addDelayButton;
 
+var scrollBar;
 var positionScroller;
 var minX_CursorPosition;
 var maxX_CursorPosition;
@@ -34,7 +32,6 @@ var tInterval;
 var savedTime;
 var paused = 0;
 var running = 0;
-
 
 function initPage() {
 	loadJSON(function(response) {
@@ -70,20 +67,16 @@ function initPage() {
 		window.alert("Init fini !");
 	});
 		
+	svgGUI = getSvgElem("GUI");
 	playPauseButtonText = getSvgElem("play-pause-button-text");
 	timeText = getSvgElem("timeText");
 	delayText = getSvgElem("delayText");
 	correctionDelayText = getSvgElem("correctionDelayText");
 	playIcon = getSvgElem('playIcon');
 	pauseIcon = getSvgElem('pauseIcon');
-	
-	loadJsonButton = getSvgElem("loadJsonButton");
-	playButton = getSvgElem("playButton");
-	subDelayButton = getSvgElem("subDelayButton");
-	addDelayButton = getSvgElem("addDelayButton");
-	
+		
 	positionScroller = getSvgElem("positionScroller");
-	var scrollBar = getSvgElem("positionScrollBarBackground");
+	scrollBar = getSvgElem("positionScrollBarBackground");
 	
 	var scrollBarWidth = parseFloat(scrollBar.getAttributeNS(null, 'width'));
 	var positionScrollerWidth = parseFloat(positionScroller.getAttributeNS(null, 'width'));
@@ -187,27 +180,53 @@ function getShowTime(){
  }
  
 function updateGUI() {
-  if (timeText != null) timeText.textContent = computePrintableTime(difference);
-  if (delayText != null) delayText.textContent = computeShortPrintableTime(difference-(audio.currentTime*1000));	
-  
-  var newX = minX_CursorPosition + (maxX_CursorPosition - minX_CursorPosition) * audio.currentTime/audio.duration;
-  if (positionScroller != null) positionScroller.setAttributeNS(null,'x', newX);
+	if (svgGUI != null) {
+		if ('hidden' != svgGUI.getAttributeNS(null, 'visibility')) {
+			if (timeText != null) timeText.textContent = computePrintableTime(difference);
+			if (delayText != null) delayText.textContent = computeShortPrintableTime(difference-(audio.currentTime*1000));	
+
+			var newX = minX_CursorPosition + (maxX_CursorPosition - minX_CursorPosition) * audio.currentTime/audio.duration;
+			if (positionScroller != null) positionScroller.setAttributeNS(null,'x', newX);
+		}
+	}
 }
 
 function showHideGui() {
-	toggleVisibilty(playIcon);
-	toggleVisibilty(pauseIcon);
-	toggleVisibilty(timeText);
-	toggleVisibilty(delayText);
-	toggleVisibilty(loadJsonButton);
-	toggleVisibilty(playButton);
-	toggleVisibilty(subDelayButton);
-	toggleVisibilty(addDelayButton);
-	toggleVisibilty(correctionDelayText);
+	toggleVisibilty(GUI);
+	// toggleVisibilty(playIcon);
+	// toggleVisibilty(pauseIcon);
+	// toggleVisibilty(timeText);
+	// toggleVisibilty(delayText);
+	// toggleVisibilty(loadJsonButton);
+	// toggleVisibilty(playButton);
+	// toggleVisibilty(subDelayButton);
+	// toggleVisibilty(addDelayButton);
+	// toggleVisibilty(correctionDelayText);	
 }
 
 function moveScroller() {
+	
 }
+
+function forward() {
+	if (audioInit)	{
+		var newPosition = audio.currentTime + 1000;
+		if (newPosition > audio.duration) { audio.currentTime = audio.duration - 1000;
+		} else {
+			audio.currentTime = newPosition; 
+		}
+	}
+}
+
+function rewind() {
+	if (audioInit)	{
+		var newPosition = audio.currentTime - 1000;
+		if (newPosition < 0) { audio.currentTime = 0;
+		} else {
+			audio.currentTime = newPosition; 
+		}
+	}
+} 
 
 function getSvgElem(elemId)
 {
