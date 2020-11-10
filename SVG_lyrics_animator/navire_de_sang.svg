@@ -61,9 +61,9 @@
      showgrid="false"
      inkscape:current-layer="positionScrollBar"
      inkscape:document-units="mm"
-     inkscape:cy="-7.166036"
-     inkscape:cx="333.11395"
-     inkscape:zoom="1.5870498"
+     inkscape:cy="-153.11517"
+     inkscape:cx="334.77251"
+     inkscape:zoom="0.79352492"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -115,41 +115,7 @@
        width=&quot;338.66666&quot;
        id=&quot;rect2087&quot;
        style=&quot;fill:#f9f9f9;stroke:#0a001a;stroke-width:0.264583;stroke-opacity:1&quot; /&gt;
-    <svg:g
-   onload="initPage();"
-   onclick="initPage();"
-   onmouseout="style.stroke = &quot;#000000&quot;;"
-   onmouseover="style.stroke = &quot;#CC0000&quot;; "
-   style="stroke-width:1.01839"
-   transform="matrix(0.98188091,0,0,0.98200871,-142.66578,1.6179734)"
-   id="loadJsonButton"
-   onmousedown="style.stroke = &quot;#CC00BB&quot;; "
-   onmouseup="style.stroke = &quot;#000000&quot;;">
-  <svg:rect
-     inkscape:label="#cadre_image"
-     onclick=""
-     style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#000000;stroke-width:0.473549;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-     id="Cadre_Image"
-     width="39.620243"
-     height="9.0899744"
-     x="159.80368"
-     y="5.7155294"
-     ry="2.5018568"
-     rx="2.5018568" />
-  <svg:text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:5.06159px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
-     x="162.36426"
-     y="11.878196"
-     id="text2085"
-     transform="scale(1.0000651,0.99993491)"><svg:tspan
-       sodipodi:role="line"
-       id="tspan2083"
-       x="162.36426"
-       y="11.878196"
-       style="stroke-width:0.274403">Charger JSON</svg:tspan></svg:text>
-</svg:g>
-<svg:text
+    <svg:text
    transform="scale(1.0000172,0.9999828)"
    id="text4520-5-62-1-3-2-4-5-6-0"
    y="272.86273"
@@ -163,58 +129,6 @@
    x="184.86952"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.96957px;line-height:1.25;font-family:Ancient;-inkscape-font-specification:Ancient;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:end;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:end;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#6d6d6d;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
    xml:space="preserve" />
-<svg:g
-   inkscape:label="#playButton"
-   onmouseup="style.stroke = &quot;#000000&quot;;"
-   onmousedown="style.stroke = &quot;#CC00BB&quot;; "
-   id="playButton"
-   transform="matrix(0.98188092,0,0,0.98200871,-100.95855,1.6165942)"
-   style="stroke-width:1.01839"
-   onmouseover="style.stroke = &quot;#CC0000&quot;; "
-   onmouseout="style.stroke = &quot;#000000&quot;;"
-   onclick="play();">
-  <svg:rect
-     rx="2.5018568"
-     ry="2.5018568"
-     y="5.8250613"
-     x="159.92027"
-     height="9.0899744"
-     width="25.879221"
-     id="Cadre_Image-1"
-     style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.473549;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-     onclick=""
-     inkscape:label="#cadre_image" />
-  <svg:path
-     onclick=""
-     style="fill:#23d62c;fill-opacity:1;stroke:#23d62c;stroke-width:1.29389;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 163.61427,12.035725 V 8.3047748 l 3.2456,1.8793952 z"
-     id="playIcon" />
-  <svg:g
-     onclick=""
-     id="pauseIcon">
-    <svg:path
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff880c;stroke-width:1.49805;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       d="M 163.60376,8.4731524 V 11.923196"
-       id="path1035" />
-    <svg:path
-       id="path1035-4"
-       d="M 166.68697,8.4731524 V 11.923196"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff880c;stroke-width:1.49805;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-  </svg:g>
-  <svg:text
-     inkscape:label="#play-pause-button-text"
-     transform="scale(1.0000651,0.99993491)"
-     id="play-pause-button-text"
-     y="11.667471"
-     x="169.44568"
-     style="font-style:normal;font-weight:normal;font-size:4.67044px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
-     xml:space="preserve"><svg:tspan
-       style="font-size:4.67044px;stroke-width:0.274403"
-       y="11.667471"
-       x="169.44568"
-       id="tspan1070"
-       sodipodi:role="line">Play</svg:tspan></svg:text>
-</svg:g>
 <svg:text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -540,85 +454,6 @@
      style="stroke-width:0.264583">Texte spécial 4 </svg:tspan></svg:text>
 <svg:text
    xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:7.65464px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
-   x="85.871994"
-   y="12.017104"
-   id="timeText"
-   inkscape:label="#timeText"
-   onclick="logCurrentTime();"><svg:tspan
-     sodipodi:role="line"
-     id="tspan1007"
-     x="85.871994"
-     y="12.017104"
-     style="stroke-width:0.269449">00:00:00:000 </svg:tspan></svg:text>
-<svg:text
-   transform="scale(1.0049081,0.99511588)"
-   onclick="logCurrentTime();"
-   inkscape:label="#delayText"
-   id="delayText"
-   y="18.236765"
-   x="109.95216"
-   style="font-style:normal;font-weight:normal;font-size:5.15914px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.269449"
-     y="18.236765"
-     x="109.95216"
-     id="tspan1007-7"
-     sodipodi:role="line">00:00:000 </svg:tspan></svg:text>
-<svg:g
-   style="stroke-width:1.1993"
-   onclick="subDelay();"
-   transform="matrix(0.83791429,0,0,0.82974929,-6.787953,-4.2047346)"
-   id="subDelayButton">
-  <svg:ellipse
-     ry="2.8670845"
-     rx="3.0283198"
-     cy="24.686499"
-     cx="112.82638"
-     id="timerCalibrateButton"
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.557672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
-     onclick="timerCalibrate();" />
-  <svg:path
-     id="path1192"
-     d="m 111.44124,24.686499 h 2.77028"
-     style="fill:none;stroke:#000000;stroke-width:1.03739;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-</svg:g>
-<svg:g
-   style="stroke-width:1.1993"
-   onclick="addDelay();"
-   transform="matrix(0.83791429,0,0,0.82974929,-17.412691,-4.1128228)"
-   id="addDelayButton">
-  <svg:ellipse
-     onclick="timerCalibrate();"
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.557673;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
-     id="timerCalibrateButton-2"
-     cx="147.66008"
-     cy="24.575727"
-     rx="3.0283198"
-     ry="2.8670845" />
-  <svg:path
-     style="fill:none;stroke:#000000;stroke-width:1.03739;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 146.27494,24.575727 h 2.77028"
-     id="path1192-6" />
-  <svg:path
-     style="fill:none;stroke:#000000;stroke-width:1.03739;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 147.66008,23.190587 v 2.77028"
-     id="path1192-2" />
-</svg:g>
-<svg:text
-   transform="matrix(0.83791429,0,0,0.82974929,-39.01666,10.045722)"
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:6.18733px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:12.5898;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32315"
-   x="155.95413"
-   y="9.695303"
-   id="correctionDelayText"
-   inkscape:label="#delayText"
-   onclick="logCurrentTime();"><svg:tspan
-     x="155.95413"
-     y="9.695303"><svg:tspan
-       style="text-align:center;text-anchor:middle;stroke-width:0.32315">000 </svg:tspan></svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
    x="365.76953"
    y="215.18488"
@@ -646,38 +481,208 @@
    style="stroke-width:1.04059"
    transform="matrix(0.92350166,0,0,1,4.6278666,0)"
    id="positionScrollBar">
-  <svg:rect
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.483874;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
-     id="positionScrollBarBackground"
-     width="123.28497"
-     height="6.0017014"
-     x="14.263898"
-     y="20.079187"
-     ry="1.5004241"
-     rx="1.5795873" />
-  <svg:rect
-     onmousemove="moveScroller();"
-     inkscape:label="#positionScroller"
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.483876;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
-     id="positionScroller"
-     width="1.8338534"
-     height="4.6679902"
-     x="15.013899"
-     y="20.746042"
-     rx="0.9928804"
-     ry="1.1253171" />
-  <svg:path
-     inkscape:label="#rewindButton"
-     id="rewindButton"
-     d="m 12.722451,24.891412 v -3.622751 l -2.609868,1.82489 z"
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.32211;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-     onclick="rewind();" />
-  <svg:path
-     onclick="forward();"
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.32211;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-     d="m 139.01059,24.891413 v -3.622751 l 2.60987,1.82489 z"
-     id="forwardButton"
-     inkscape:label="#forwardButton" />
+  <svg:g
+     inkscape:label="#GUI"
+     id="GUI">
+    <svg:g
+       onmouseup="style.stroke = &quot;#000000&quot;;"
+       onmousedown="style.stroke = &quot;#CC00BB&quot;; "
+       id="loadJsonButton"
+       transform="matrix(1.0632151,0,0,0.98200871,-159.49473,1.6179734)"
+       style="stroke-width:1.01839"
+       onmouseover="style.stroke = &quot;#CC0000&quot;; "
+       onmouseout="style.stroke = &quot;#000000&quot;;"
+       onclick="initPage();"
+       onload="initPage();">
+      <svg:rect
+         rx="2.5018568"
+         ry="2.5018568"
+         y="5.7155294"
+         x="159.80368"
+         height="9.0899744"
+         width="39.620243"
+         id="Cadre_Image"
+         style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#000000;stroke-width:0.473549;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+         onclick=""
+         inkscape:label="#cadre_image" />
+      <svg:text
+         transform="scale(1.0000651,0.99993491)"
+         id="text2085"
+         y="11.878196"
+         x="162.36426"
+         style="font-style:normal;font-weight:normal;font-size:5.06159px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
+         xml:space="preserve"><svg:tspan
+           style="stroke-width:0.274403"
+           y="11.878196"
+           x="162.36426"
+           id="tspan2083"
+           sodipodi:role="line">Charger JSON</svg:tspan></svg:text>
+    </svg:g>
+    <svg:g
+       onclick="play();"
+       onmouseout="style.stroke = &quot;#000000&quot;;"
+       onmouseover="style.stroke = &quot;#CC0000&quot;; "
+       style="stroke-width:1.01839"
+       transform="matrix(1.0632151,0,0,0.98200871,-114.33268,1.6165942)"
+       id="playButton"
+       onmousedown="style.stroke = &quot;#CC00BB&quot;; "
+       onmouseup="style.stroke = &quot;#000000&quot;;"
+       inkscape:label="#playButton">
+      <svg:rect
+         inkscape:label="#cadre_image"
+         onclick=""
+         style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.473549;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+         id="Cadre_Image-1"
+         width="25.879221"
+         height="9.0899744"
+         x="159.92027"
+         y="5.8250613"
+         ry="2.5018568"
+         rx="2.5018568" />
+      <svg:path
+         id="playIcon"
+         d="M 163.61427,12.035725 V 8.3047748 l 3.2456,1.8793952 z"
+         style="fill:#23d62c;fill-opacity:1;stroke:#23d62c;stroke-width:1.29389;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         onclick="" />
+      <svg:g
+         id="pauseIcon"
+         onclick="">
+        <svg:path
+           id="path1035"
+           d="M 163.60376,8.4731524 V 11.923196"
+           style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff880c;stroke-width:1.49805;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+        <svg:path
+           style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff880c;stroke-width:1.49805;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+           d="M 166.68697,8.4731524 V 11.923196"
+           id="path1035-4" />
+      </svg:g>
+      <svg:text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.67044px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
+         x="169.44568"
+         y="11.667471"
+         id="play-pause-button-text"
+         transform="scale(1.0000651,0.99993491)"
+         inkscape:label="#play-pause-button-text"><svg:tspan
+           sodipodi:role="line"
+           id="tspan1070"
+           x="169.44568"
+           y="11.667471"
+           style="font-size:4.67044px;stroke-width:0.274403">Play</svg:tspan></svg:text>
+    </svg:g>
+    <svg:text
+       transform="matrix(1.0828351,0,0,1,-5.0112165,0)"
+       onclick="logCurrentTime();"
+       inkscape:label="#timeText"
+       id="timeText"
+       y="12.017104"
+       x="85.871994"
+       style="font-style:normal;font-weight:normal;font-size:7.65464px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+       xml:space="preserve"><svg:tspan
+         style="stroke-width:0.269449"
+         y="12.017104"
+         x="85.871994"
+         id="tspan1007"
+         sodipodi:role="line">00:00:00:000 </svg:tspan></svg:text>
+    <svg:text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.15914px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+       x="109.95216"
+       y="18.236765"
+       id="delayText"
+       inkscape:label="#delayText"
+       onclick="logCurrentTime();"
+       transform="matrix(1.0881498,0,0,0.99511588,-5.0112165,0)"><svg:tspan
+         sodipodi:role="line"
+         id="tspan1007-7"
+         x="109.95216"
+         y="18.236765"
+         style="stroke-width:0.269449">00:00:000 </svg:tspan></svg:text>
+    <svg:g
+       id="subDelayButton"
+       transform="matrix(0.90732301,0,0,0.82974929,-12.36145,-4.2047345)"
+       onclick="subDelay();"
+       style="stroke-width:1.1993">
+      <svg:ellipse
+         onclick="timerCalibrate();"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.557672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+         id="timerCalibrateButton"
+         cx="112.82638"
+         cy="24.686499"
+         rx="3.0283198"
+         ry="2.8670845" />
+      <svg:path
+         style="fill:none;stroke:#000000;stroke-width:1.03739;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 111.44124,24.686499 h 2.77028"
+         id="path1192" />
+    </svg:g>
+    <svg:g
+       id="addDelayButton"
+       transform="matrix(0.90732301,0,0,0.82974929,-23.866289,-4.1128227)"
+       onclick="addDelay();"
+       style="stroke-width:1.1993">
+      <svg:ellipse
+         ry="2.8670845"
+         rx="3.0283198"
+         cy="24.575727"
+         cx="147.66008"
+         id="timerCalibrateButton-2"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.557673;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+         onclick="timerCalibrate();" />
+      <svg:path
+         id="path1192-6"
+         d="m 146.27494,24.575727 h 2.77028"
+         style="fill:none;stroke:#000000;stroke-width:1.03739;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <svg:path
+         id="path1192-2"
+         d="m 147.66008,23.190587 v 2.77028"
+         style="fill:none;stroke:#000000;stroke-width:1.03739;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </svg:g>
+    <svg:text
+       onclick="logCurrentTime();"
+       inkscape:label="#delayText"
+       id="correctionDelayText"
+       y="9.695303"
+       x="155.95413"
+       style="font-style:normal;font-weight:normal;font-size:6.18733px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:12.5898;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32315"
+       xml:space="preserve"
+       transform="matrix(0.90732301,0,0,0.82974929,-47.259825,10.045722)"><svg:tspan
+         x="155.95413"
+         y="9.695303"><svg:tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.32315">000 </svg:tspan></svg:tspan></svg:text>
+    <svg:rect
+       rx="1.5795873"
+       ry="1.5004241"
+       y="20.079187"
+       x="14.263898"
+       height="6.0017014"
+       width="123.28497"
+       id="positionScrollBarBackground"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.483874;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1" />
+    <svg:rect
+       ry="1.1253171"
+       rx="0.9928804"
+       y="20.746042"
+       x="15.013899"
+       height="4.6679902"
+       width="1.8338534"
+       id="positionScroller"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.483876;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+       inkscape:label="#positionScroller"
+       onmousemove="moveScroller();" />
+    <svg:path
+       onclick="rewind();"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.32211;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 12.722451,24.891412 v -3.622751 l -2.609868,1.82489 z"
+       id="rewindButton"
+       inkscape:label="#rewindButton" />
+    <svg:path
+       inkscape:label="#forwardButton"
+       id="forwardButton"
+       d="m 139.01059,24.891413 v -3.622751 l 2.60987,1.82489 z"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.32211;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       onclick="forward();" />
+  </svg:g>
 </svg:g>
 </svg:g>
 </svg:svg>
