@@ -231,14 +231,14 @@ function stopDragScroller(evt){
 
 function moveScroller(evt) {
 	if (selectedElement) {
-		
-	console.log("moving scroller to ", coord.x - offset.x);
-    evt.preventDefault();
-    var coord = getMousePosition(evt);
-    selectedElement.setAttributeNS(null, "x", coord.x - offset.x);
-	if (audioInit) {
-		audio.currentTime = (( coord.x - offset.x )*audio.duration - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition);
-  }
+		console.log("moving scroller to ", coord.x - offset.x);
+		evt.preventDefault();
+		var coord = getMousePosition(evt);
+		selectedElement.setAttributeNS(null, "x", coord.x - offset.x);
+		if (audioInit) {
+			audio.currentTime = (( coord.x - offset.x )*audio.duration - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition);
+		}
+	}
 }
 
 function setSpeed(speed) {	
