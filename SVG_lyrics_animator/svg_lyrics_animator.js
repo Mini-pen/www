@@ -103,11 +103,11 @@ function initPage() {
 	
 	audio = new Audio();
 		
-	audioFileName = 'audio/Lève_le_poing.ogg';	
+	audioFileName = 'audio/Leve_le_poing.ogg';	
 	console.log("Chargement du fichier son : \n", audioFileName);
 	addSourceToMedia(audio, audioFileName, "audio/ogg");
 	
-	audioFileName = 'audio/Lève_le_poing.mp3';	
+	audioFileName = 'audio/Leve_le_poing.mp3';	
 	console.log("Chargement du fichier son : \n", audioFileName);
 	addSourceToMedia(audio, audioFileName, "audio/mpeg");
 		
@@ -519,7 +519,7 @@ function setNumberValue(baseNumberName, value, maxValue) {
 }
 
 function loadJSON(callback) {
-	var jsonFile = "lyrics/Lève_le_poing.json";
+	var jsonFile = "lyrics/Leve_le_poing.json";
 	var xobj = new XMLHttpRequest();
 	xobj.overrideMimeType("application/json");	
 	console.log("openning ", jsonFile);
