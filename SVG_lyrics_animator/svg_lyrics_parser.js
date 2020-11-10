@@ -20,9 +20,8 @@ var subDelayButton;
 var addDelayButton;
 
 var positionScroller;
-var cursorPositionMarginInBar = 0.75;
-var minX_CursorPosition = 10.0; //TODO compute this at init
-var maxX_CursorPosition = 130.0; //TODO compute this at init
+var minX_CursorPosition;
+var maxX_CursorPosition;
 
 //var startTimerButton = document.querySelector('.startTimer');
 //var pauseTimerButton = document.querySelector('.pauseTimer');
@@ -84,11 +83,19 @@ function initPage() {
 	addDelayButton = getSvgElem("addDelayButton");
 	
 	positionScroller = getSvgElem("positionScroller");
-	var scrollBar = getSvgElem("positionScrollBar");
-	minX_CursorPosition = positionScroller.getAttributeNS(null, 'x');
-	//maxX_CursorPosition = scrollBar.getAttributeNS(null,'x') + scrollBar.getBBox().x - cursorPositionMarginInBar - positionScroller.getBBox().x;
-	maxX_CursorPosition = scrollBar.getAttributeNS(null,'x') + scrollBar.width.baseVal - cursorPositionMarginInBar - positionScroller.width.baseVal;
-	console.log("minX_CursorPosition = ", minX_CursorPosition, "maxX_CursorPosition = ", maxX_CursorPosition);
+	var scrollBar = getSvgElem("positionScrollBarBackground");
+	
+	var scrollBarWidth = parseFloat(scrollBar.getAttributeNS(null, 'width'));
+	var positionScrollerWidth = parseFloat(positionScroller.getAttributeNS(null, 'width'));
+	var scrollBarX = parseFloat(scrollBar.getAttributeNS(null, 'x'));
+	var positionScrollerX = parseFloat(positionScroller.getAttributeNS(null, 'x'));
+		
+	minX_CursorPosition = positionScrollerX;	
+	maxX_CursorPosition = scrollBarX + scrollBarWidth - positionScrollerX + scrollBarX - positionScrollerWidth;
+		
+	//console.log("scrollBar.x = ", scrollBarX, "positionScroller.x = ", positionScrollerX );
+	//console.log("scrollBar.width = ", scrollBarWidth, "positionScroller.width = ", positionScrollerWidth );
+	//console.log("minX_CursorPosition = ", minX_CursorPosition, "maxX_CursorPosition = ", maxX_CursorPosition);
 		
 	playPauseButtonText.textContent = "Play";
 	pauseIcon.setAttributeNS(null, 'opacity', '0');	
