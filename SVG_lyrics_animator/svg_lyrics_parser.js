@@ -218,22 +218,26 @@ function getMousePosition(evt) {
 }
 
 function startDragScroller(evt) {	
+	console.log("start moving scroller");
 	selectedElement = evt.target;
     offset = getMousePosition(evt);
     offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
-    offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
 }
 
 function stopDragScroller(evt){	
+	console.log("stop moving scroller");
   selectedElement = null;
 }
 
 function moveScroller(evt) {
 	if (selectedElement) {
+		
+	console.log("moving scroller to ", coord.x - offset.x);
     evt.preventDefault();
     var coord = getMousePosition(evt);
     selectedElement.setAttributeNS(null, "x", coord.x - offset.x);
-    selectedElement.setAttributeNS(null, "y", coord.y - offset.y);
+	if (audioInit) {
+		audio.currentTime = (( coord.x - offset.x )*audio.duration - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition);
   }
 }
 
