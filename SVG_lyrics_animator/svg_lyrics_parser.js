@@ -193,7 +193,7 @@ function updateGUI() {
 }
 
 function showHideGui() {
-	toggleVisibilty(GUI);
+	toggleVisibilty(svgGUI);
 	// toggleVisibilty(playIcon);
 	// toggleVisibilty(pauseIcon);
 	// toggleVisibilty(timeText);
