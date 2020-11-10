@@ -102,15 +102,15 @@ function initPage() {
 	var audioFileName = "";
 	
 	audio = new Audio();
-	
-	audioFileName = 'audio/Lève_le_poing.mp3';	
-	console.log("Chargement du fichier son : \n", audioFileName);
-	addSourceToMedia(audio, audioFileName, "audio/mpeg");
-	
+		
 	audioFileName = 'audio/Lève_le_poing.ogg';	
 	console.log("Chargement du fichier son : \n", audioFileName);
 	addSourceToMedia(audio, audioFileName, "audio/ogg");
 	
+	audioFileName = 'audio/Lève_le_poing.mp3';	
+	console.log("Chargement du fichier son : \n", audioFileName);
+	addSourceToMedia(audio, audioFileName, "audio/mpeg");
+		
 	audio.load();
 	
 	audioInit = true;
