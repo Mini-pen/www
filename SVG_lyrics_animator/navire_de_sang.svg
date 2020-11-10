@@ -488,21 +488,21 @@
        onmouseup="style.stroke = &quot;#000000&quot;;"
        onmousedown="style.stroke = &quot;#CC00BB&quot;; "
        id="loadJsonButton"
-       transform="matrix(1.0632151,0,0,0.98200871,-159.49473,1.6179734)"
-       style="stroke-width:1.01839"
+       transform="matrix(0.65754138,0,0,0.59295099,52.130397,1.4839477)"
+       style="stroke-width:1.66652"
        onmouseover="style.stroke = &quot;#CC0000&quot;; "
        onmouseout="style.stroke = &quot;#000000&quot;;"
        onclick="initPage();"
        onload="initPage();">
       <svg:rect
-         rx="2.5018568"
-         ry="2.5018568"
+         rx="4.0453911"
+         ry="4.1434202"
          y="5.7155294"
          x="159.80368"
          height="9.0899744"
-         width="39.620243"
+         width="35.77832"
          id="Cadre_Image"
-         style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#000000;stroke-width:0.473549;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+         style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#000000;stroke-width:0.77493;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
          onclick=""
          inkscape:label="#cadre_image" />
       <svg:text
@@ -510,20 +510,20 @@
          id="text2085"
          y="11.878196"
          x="162.36426"
-         style="font-style:normal;font-weight:normal;font-size:5.06159px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
+         style="font-style:normal;font-weight:normal;font-size:5.06159px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.449041"
          xml:space="preserve"><svg:tspan
-           style="stroke-width:0.274403"
+           style="stroke-width:0.449041"
            y="11.878196"
            x="162.36426"
            id="tspan2083"
-           sodipodi:role="line">Charger JSON</svg:tspan></svg:text>
+           sodipodi:role="line">Reload Init()</svg:tspan></svg:text>
     </svg:g>
     <svg:g
        onclick="play();"
        onmouseout="style.stroke = &quot;#000000&quot;;"
        onmouseover="style.stroke = &quot;#CC0000&quot;; "
        style="stroke-width:1.01839"
-       transform="matrix(1.0632151,0,0,0.98200871,-114.33268,1.6165942)"
+       transform="matrix(1.0632151,0,0,0.98200871,-159.77591,1.6165942)"
        id="playButton"
        onmousedown="style.stroke = &quot;#CC00BB&quot;; "
        onmouseup="style.stroke = &quot;#000000&quot;;"
@@ -571,36 +571,36 @@
            style="font-size:4.67044px;stroke-width:0.274403">Play</svg:tspan></svg:text>
     </svg:g>
     <svg:text
-       transform="matrix(1.0828351,0,0,1,-5.0112165,0)"
+       transform="scale(1.0405936,0.96098997)"
        onclick="logCurrentTime();"
        inkscape:label="#timeText"
        id="timeText"
-       y="12.017104"
-       x="85.871994"
-       style="font-style:normal;font-weight:normal;font-size:7.65464px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+       y="15.776569"
+       x="38.972633"
+       style="font-style:normal;font-weight:normal;font-size:10.7207px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.280388"
        xml:space="preserve"><svg:tspan
-         style="stroke-width:0.269449"
-         y="12.017104"
-         x="85.871994"
+         style="stroke-width:0.280388"
+         y="15.776569"
+         x="38.972633"
          id="tspan1007"
          sodipodi:role="line">00:00:00:000 </svg:tspan></svg:text>
     <svg:text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:5.15914px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
-       x="109.95216"
-       y="18.236765"
+       style="font-style:normal;font-weight:normal;font-size:5.36857px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.280387"
+       x="145.75627"
+       y="24.894119"
        id="delayText"
        inkscape:label="#delayText"
        onclick="logCurrentTime();"
-       transform="matrix(1.0881498,0,0,0.99511588,-5.0112165,0)"><svg:tspan
+       transform="scale(1.045701,0.95629631)"><svg:tspan
          sodipodi:role="line"
          id="tspan1007-7"
-         x="109.95216"
-         y="18.236765"
-         style="stroke-width:0.269449">00:00:000 </svg:tspan></svg:text>
+         x="145.75627"
+         y="24.894119"
+         style="stroke-width:0.280387">00:00:000 </svg:tspan></svg:text>
     <svg:g
        id="subDelayButton"
-       transform="matrix(0.90732301,0,0,0.82974929,-12.36145,-4.2047345)"
+       transform="matrix(0.90732301,0,0,0.82974929,55.548103,-5.8551186)"
        onclick="subDelay();"
        style="stroke-width:1.1993">
       <svg:ellipse
@@ -618,7 +618,7 @@
     </svg:g>
     <svg:g
        id="addDelayButton"
-       transform="matrix(0.90732301,0,0,0.82974929,-23.866289,-4.1128227)"
+       transform="matrix(0.90732301,0,0,0.82974929,44.043264,-5.7632066)"
        onclick="addDelay();"
        style="stroke-width:1.1993">
       <svg:ellipse
@@ -646,7 +646,7 @@
        x="155.95413"
        style="font-style:normal;font-weight:normal;font-size:6.18733px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:12.5898;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32315"
        xml:space="preserve"
-       transform="matrix(0.90732301,0,0,0.82974929,-47.259825,10.045722)"><svg:tspan
+       transform="matrix(0.90732301,0,0,0.82974929,20.649728,8.3953384)"><svg:tspan
          x="155.95413"
          y="9.695303"><svg:tspan
            style="text-align:center;text-anchor:middle;stroke-width:0.32315">000 </svg:tspan></svg:tspan></svg:text>
@@ -689,7 +689,7 @@
        onmouseout=""
        onmouseover=""
        style="stroke-width:1.10199"
-       transform="matrix(0.9817365,0,0,0.9082676,-10.873988,-1.3132713)"
+       transform="matrix(0.9817365,0,0,0.9082676,-38.190989,-0.37019483)"
        id="speed025Button"
        onmousedown=""
        onmouseup="">
@@ -721,7 +721,7 @@
        onmouseup=""
        onmousedown=""
        id="speed050Button"
-       transform="matrix(0.9817365,0,0,0.9082676,-10.873988,3.7171413)"
+       transform="matrix(0.9817365,0,0,0.9082676,-38.190989,4.6602178)"
        style="stroke-width:1.10199"
        onmouseover=""
        onmouseout=""
@@ -759,7 +759,7 @@
        onmouseout=""
        onmouseover=""
        style="stroke-width:1.10199"
-       transform="matrix(0.9817365,0,0,0.9082676,-10.873988,8.7475542)"
+       transform="matrix(0.9817365,0,0,0.9082676,-25.743736,-0.44744133)"
        id="speed100Button"
        onmousedown=""
        onmouseup="">
@@ -791,7 +791,7 @@
        onmouseup=""
        onmousedown=""
        id="speed200Button"
-       transform="matrix(0.9817365,0,0,0.9082676,-10.873988,13.777968)"
+       transform="matrix(0.9817365,0,0,0.9082676,-25.743736,4.5829725)"
        style="stroke-width:1.10199"
        onmouseover=""
        onmouseout=""
