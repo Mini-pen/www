@@ -221,8 +221,8 @@ function getMousePosition(evt,elem) {
 function startDragScroller(evt) {	
 	console.log("start moving scroller");
 	scrollingTime = true;
-    offset = getMousePosition(evt, scrollBar);
-    offset.x -= parseFloat(scrollBar.getAttributeNS(null, "x"));
+    offset = getMousePosition(evt, scroller);
+    offset.x -= parseFloat(scroller.getAttributeNS(null, "x"));
 }
 
 function stopDragScroller(evt){	
@@ -232,8 +232,8 @@ function stopDragScroller(evt){
 
 function moveScroller(evt) {
 		evt.preventDefault();
-		var coord = getMousePosition(evt, scrollBar);
-		scrollBar.setAttributeNS(null, "x", coord.x - offset.x);		
+		var coord = getMousePosition(evt, scroller);
+		scroller.setAttributeNS(null, "x", coord.x - offset.x);		
 		console.log("moving scroller to ", coord.x - offset.x);
 		if (audioInit) {
 			audio.currentTime = (( coord.x - offset.x )*audio.duration - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition);
