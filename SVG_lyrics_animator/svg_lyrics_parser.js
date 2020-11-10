@@ -86,7 +86,7 @@ function initPage() {
 	positionScroller = getSvgElem("positionScroller");
 	var scrollBar = getSvgElem("positionScrollBar");
 	minX_CursorPosition = positionScroller.getAttributeNS(null, 'x');
-	maxX_CursorPosition = scrollBar.getAttributeNS(null,'x') + scrollBar.getBBox() - cursorPositionMarginInBar - positionScroller.getBBox();
+	maxX_CursorPosition = scrollBar.getAttributeNS(null,'x') + scrollBar.getBBox().x - cursorPositionMarginInBar - positionScroller.getBBox().x;
 	console.log("minX_CursorPosition = ", minX_CursorPosition, "maxX_CursorPosition = ", maxX_CursorPosition);
 		
 	playPauseButtonText.textContent = "Play";
