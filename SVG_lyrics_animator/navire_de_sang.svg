@@ -59,11 +59,11 @@
      inkscape:window-width="1366"
      inkscape:snap-global="false"
      showgrid="false"
-     inkscape:current-layer="positionScrollBar"
+     inkscape:current-layer="GUI"
      inkscape:document-units="mm"
-     inkscape:cy="-153.11517"
-     inkscape:cx="334.77251"
-     inkscape:zoom="0.79352492"
+     inkscape:cy="-24.576457"
+     inkscape:cx="300.31796"
+     inkscape:zoom="1.1222137"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -682,6 +682,146 @@
        d="m 139.01059,24.891413 v -3.622751 l 2.60987,1.82489 z"
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.32211;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        onclick="forward();" />
+    <svg:g
+       inkscape:label="#speed025Button"
+       onload="initPage();"
+       onclick="setSpeed(0.25);"
+       onmouseout=""
+       onmouseover=""
+       style="stroke-width:1.10199"
+       transform="matrix(0.9817365,0,0,0.9082676,-10.873988,-1.3132713)"
+       id="speed025Button"
+       onmousedown=""
+       onmouseup="">
+      <svg:rect
+         inkscape:label="#cadre_image"
+         onclick=""
+         style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#000000;stroke-width:0.512423;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+         id="Cadre_Image-3"
+         width="10.815289"
+         height="4.1667132"
+         x="160.31305"
+         y="9.1108856"
+         ry="1.5368644"
+         rx="1.3442476" />
+      <svg:text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.82907px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.296929"
+         x="159.73843"
+         y="12.30727"
+         id="text2085-0"
+         transform="scale(1.0144526,0.9857533)"><svg:tspan
+           sodipodi:role="line"
+           id="tspan2083-3"
+           x="159.73843"
+           y="12.30727"
+           style="stroke-width:0.296929">25 %</svg:tspan></svg:text>
+    </svg:g>
+    <svg:g
+       onmouseup=""
+       onmousedown=""
+       id="speed050Button"
+       transform="matrix(0.9817365,0,0,0.9082676,-10.873988,3.7171413)"
+       style="stroke-width:1.10199"
+       onmouseover=""
+       onmouseout=""
+       onclick="setSpeed(0.5);"
+       onload="initPage();"
+       inkscape:label="#speed050Button">
+      <svg:rect
+         rx="1.3442476"
+         ry="1.5368644"
+         y="9.1108856"
+         x="160.31305"
+         height="4.1667132"
+         width="10.815289"
+         id="Cadre_Image-3-9"
+         style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#000000;stroke-width:0.512423;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+         onclick=""
+         inkscape:label="#cadre_image" />
+      <svg:text
+         transform="scale(1.0144526,0.9857533)"
+         id="text2085-0-6"
+         y="12.30727"
+         x="159.73291"
+         style="font-style:normal;font-weight:normal;font-size:2.82907px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.296929"
+         xml:space="preserve"><svg:tspan
+           style="stroke-width:0.296929"
+           y="12.30727"
+           x="159.73291"
+           id="tspan2083-3-7"
+           sodipodi:role="line">50 %</svg:tspan></svg:text>
+    </svg:g>
+    <svg:g
+       inkscape:label="#speed100Button"
+       onload="initPage();"
+       onclick="setSpeed(1);"
+       onmouseout=""
+       onmouseover=""
+       style="stroke-width:1.10199"
+       transform="matrix(0.9817365,0,0,0.9082676,-10.873988,8.7475542)"
+       id="speed100Button"
+       onmousedown=""
+       onmouseup="">
+      <svg:rect
+         inkscape:label="#cadre_image"
+         onclick=""
+         style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#000000;stroke-width:0.512423;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+         id="Cadre_Image-3-9-8"
+         width="10.815289"
+         height="4.1667132"
+         x="160.31305"
+         y="9.1108856"
+         ry="1.5368644"
+         rx="1.3442476" />
+      <svg:text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.82907px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.296929"
+         x="158.78596"
+         y="12.30727"
+         id="text2085-0-6-6"
+         transform="scale(1.0144526,0.9857533)"><svg:tspan
+           sodipodi:role="line"
+           id="tspan2083-3-7-1"
+           x="158.78596"
+           y="12.30727"
+           style="stroke-width:0.296929">100 %</svg:tspan></svg:text>
+    </svg:g>
+    <svg:g
+       onmouseup=""
+       onmousedown=""
+       id="speed200Button"
+       transform="matrix(0.9817365,0,0,0.9082676,-10.873988,13.777968)"
+       style="stroke-width:1.10199"
+       onmouseover=""
+       onmouseout=""
+       onclick="setSpeed(2);"
+       onload="initPage();"
+       inkscape:label="#speed200Button">
+      <svg:rect
+         rx="1.3442476"
+         ry="1.5368644"
+         y="9.1108856"
+         x="160.31305"
+         height="4.1667132"
+         width="10.815289"
+         id="Cadre_Image-3-9-8-1"
+         style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#000000;stroke-width:0.512423;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+         onclick=""
+         inkscape:label="#cadre_image" />
+      <svg:text
+         transform="scale(1.0144526,0.9857533)"
+         id="text2085-0-6-6-8"
+         y="12.30727"
+         x="158.83777"
+         style="font-style:normal;font-weight:normal;font-size:2.82907px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.296929"
+         xml:space="preserve"><svg:tspan
+           style="stroke-width:0.296929"
+           y="12.30727"
+           x="158.83777"
+           id="tspan2083-3-7-1-7"
+           sodipodi:role="line">200 %</svg:tspan></svg:text>
+    </svg:g>
   </svg:g>
 </svg:g>
 </svg:g>

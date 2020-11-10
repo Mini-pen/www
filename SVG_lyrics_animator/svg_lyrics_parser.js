@@ -182,7 +182,8 @@ function getShowTime(){
 function updateGUI() {
 	if (svgGUI != null) {
 		if ('hidden' != svgGUI.getAttributeNS(null, 'visibility')) {
-			if (timeText != null) timeText.textContent = computePrintableTime(audio.currentTime);
+			//if (timeText != null) timeText.textContent = computePrintableTime(stopWatchTime);
+			if (timeText != null) timeText.textContent = computePrintableTime(audio.currentTime*1000);
 			if (delayText != null) delayText.textContent = computeShortPrintableTime(stopWatchTime-(audio.currentTime*1000));	
 
 			var newX = minX_CursorPosition + (maxX_CursorPosition - minX_CursorPosition) * audio.currentTime/audio.duration;
@@ -208,6 +209,12 @@ function moveScroller() {
 	
 }
 
+function setSpeed(speed) {	
+	if (audioInit)	{
+		audio.playbackRate = speed;		
+	}
+}
+
 function forward() {
 	if (audioInit)	{
 		var newPosition = audio.currentTime + 2;
@@ -215,6 +222,7 @@ function forward() {
 		} else {
 			//console.log("Forward : audio.currentTime", audio.currentTime, "newPosition", newPosition);
 			audio.currentTime = newPosition; 
+			stopWatchTime = newPosition/1000;
 		}
 	}
 }
@@ -226,6 +234,7 @@ function rewind() {
 		} else {			
 			//console.log("Rewind : audio.currentTime", audio.currentTime, "newPosition", newPosition);
 			audio.currentTime = newPosition; 
+			stopWatchTime = newPosition/1000;
 		}
 	}
 } 
