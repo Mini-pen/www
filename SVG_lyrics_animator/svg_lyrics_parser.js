@@ -21,6 +21,10 @@ var positionScroller;
 var minX_CursorPosition;
 var maxX_CursorPosition;
 
+//svg elem manipulation
+var selectedElement;
+var offset;
+
 //var startTimerButton = document.querySelector('.startTimer');
 //var pauseTimerButton = document.querySelector('.pauseTimer');
 //var timerDisplay = document.querySelector('.timer');
@@ -205,8 +209,32 @@ function showHideGui() {
 	// toggleVisibilty(correctionDelayText);	
 }
 
-function moveScroller() {
-	
+function getMousePosition(evt) {
+  var CTM = svg.getScreenCTM();
+  return {
+    x: (evt.clientX - CTM.e) / CTM.a,
+    y: (evt.clientY - CTM.f) / CTM.d
+  };
+}
+
+function startDragScroller(evt) {	
+	selectedElement = evt.target;
+    offset = getMousePosition(evt);
+    offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
+    offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
+}
+
+function stopDragScroller(evt){	
+  selectedElement = null;
+}
+
+function moveScroller(evt) {
+	if (selectedElement) {
+    evt.preventDefault();
+    var coord = getMousePosition(evt);
+    selectedElement.setAttributeNS(null, "x", coord.x - offset.x);
+    selectedElement.setAttributeNS(null, "y", coord.y - offset.y);
+  }
 }
 
 function setSpeed(speed) {	
