@@ -118,11 +118,11 @@ function initPage() {
 	resetTimer();
 }
 
-function addSourceToMedia(media, srcUrl, typeMedia) {
+function addSourceToMedia(media, srcUrl, mediaType) {
     var source = document.createElement('source');
 
     source.src = srcUrl;
-    source.type = type;
+    source.type = mediaType;
 
     element.appendChild(source);
 }
