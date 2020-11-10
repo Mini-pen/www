@@ -4,7 +4,6 @@ var audio;
 
 var animInit = false;
 var animIsPlaying = false;
-var audioFileName;
 
 //global var for direct access to svg elems
 var svgGUI;
@@ -100,13 +99,34 @@ function initPage() {
 	
 	correctionDelayText.textContent = audioTimeDelay;
 	
-	audioFileName = 'audio/Lève_le_poing.ogg audio/Lève_le_poing.mp3';	
+	var audioFileName = "";
+	
+	audio = new Audio();
+	
+	audioFileName = 'audio/Lève_le_poing.mp3';	
 	console.log("Chargement du fichier son : \n", audioFileName);
-	audio = new Audio(audioFileName);
+	addSourceToMedia(audio, audioFileName, "audio/mpeg");
+	
+	audioFileName = 'audio/Lève_le_poing.ogg';	
+	console.log("Chargement du fichier son : \n", audioFileName);
+	addSourceToMedia(audio, audioFileName, "audio/ogg");
+	
+	audio.load();
+	
 	audioInit = true;
 	
 	resetTimer();
 }
+
+function addSourceToMedia(media, srcUrl, typeMedia) {
+    var source = document.createElement('source');
+
+    source.src = srcUrl;
+    source.type = type;
+
+    element.appendChild(source);
+}
+
 
 function startTimer(){
   if(!running){
@@ -390,7 +410,6 @@ function playPauseAnim(){
 	if (animInit)	{
 		var animInit = false;
 		var animIsPlaying = false;
-		// var audio = new Audio(audioFileName);
 		// animTest();
 		animInit = true;
 	}
