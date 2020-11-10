@@ -210,9 +210,10 @@ function moveScroller() {
 
 function forward() {
 	if (audioInit)	{
-		var newPosition = audio.currentTime + 1000;
-		if (newPosition > audio.duration) { audio.currentTime = audio.duration - 1000;
+		var newPosition = audio.currentTime + 100;
+		if (newPosition > audio.duration) { audio.currentTime = audio.duration - 100;
 		} else {
+			console.log("Forward : audio.currentTime", audio.currentTime, "newPosition", newPosition);
 			audio.currentTime = newPosition; 
 		}
 	}
@@ -220,9 +221,10 @@ function forward() {
 
 function rewind() {
 	if (audioInit)	{
-		var newPosition = audio.currentTime - 1000;
+		var newPosition = audio.currentTime - 100;
 		if (newPosition < 0) { audio.currentTime = 0;
-		} else {
+		} else {			
+			console.log("Rewind : audio.currentTime", audio.currentTime, "newPosition", newPosition);
 			audio.currentTime = newPosition; 
 		}
 	}
