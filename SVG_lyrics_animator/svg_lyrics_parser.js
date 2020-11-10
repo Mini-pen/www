@@ -85,8 +85,8 @@ function initPage() {
 	
 	positionScroller = getSvgElem("positionScroller");
 	var scrollBar = getSvgElem("positionScrollBar");
-	minX_CursorPosition = positionScroller.getAttributeNS('x');
-	maxX_CursorPosition = scrollBar.getAttributeNS('x') + scrollBar.getBBox() - cursorPositionMarginInBar - positionScroller.getBBox();
+	minX_CursorPosition = positionScroller.getAttributeNS(null, 'x');
+	maxX_CursorPosition = scrollBar.getAttributeNS(null,'x') + scrollBar.getBBox() - cursorPositionMarginInBar - positionScroller.getBBox();
 	console.log("minX_CursorPosition = ", minX_CursorPosition, "maxX_CursorPosition = ", maX_CursorPosition);
 		
 	playPauseButtonText.textContent = "Play";
@@ -183,7 +183,7 @@ function updateGUI() {
   if (delayText != null) delayText.textContent = computeShortPrintableTime(difference-(audio.currentTime*1000));	
   
   var newX = minX_CursorPosition + (maxX_CursorPosition - minX_CursorPosition) * audio.currentTime/audio.duration;
-  if (positionScroller != null) positionScroller.setAttribute('x', newX);
+  if (positionScroller != null) positionScroller.setAttributeNS(null,'x', newX);
 }
 
 function showHideGui() {
