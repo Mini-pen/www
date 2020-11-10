@@ -500,7 +500,7 @@ function setNumberValue(baseNumberName, value, maxValue) {
 }
 
 function loadJSON(callback) {
-	var jsonFile = "navire_de_sang.json";
+	var jsonFile = "lyrics/Lève_le_poing.json";
 	var xobj = new XMLHttpRequest();
 	xobj.overrideMimeType("application/json");	
 	console.log("openning ", jsonFile);
