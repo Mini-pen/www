@@ -111,6 +111,10 @@ function initPage() {
 	console.log("Chargement du fichier son : \n", audioFileName);
 	addSourceToMedia(audio, audioFileName, "audio/mpeg");
 		
+	audioFileName = 'audio/Leve_le_poing.mp3';	
+	console.log("Chargement du fichier son : \n", audioFileName);
+	addSourceToMedia(audio, audioFileName, "audio/wave");
+	
 	audio.load();
 	
 	audioInit = true;
