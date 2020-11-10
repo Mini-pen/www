@@ -124,7 +124,7 @@ function addSourceToMedia(media, srcUrl, mediaType) {
     source.src = srcUrl;
     source.type = mediaType;
 
-    element.appendChild(source);
+    media.appendChild(source);
 }
 
 
