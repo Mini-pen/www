@@ -231,10 +231,10 @@ function stopDragScroller(evt){
 
 function moveScroller(evt) {
 	if (selectedElement) {
-		console.log("moving scroller to ", coord.x - offset.x);
 		evt.preventDefault();
 		var coord = getMousePosition(evt, selectedElement);
-		selectedElement.setAttributeNS(null, "x", coord.x - offset.x);
+		selectedElement.setAttributeNS(null, "x", coord.x - offset.x);		
+		console.log("moving scroller to ", coord.x - offset.x);
 		if (audioInit) {
 			audio.currentTime = (( coord.x - offset.x )*audio.duration - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition);
 		}
