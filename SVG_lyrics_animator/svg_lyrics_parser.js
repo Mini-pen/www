@@ -219,24 +219,26 @@ function getMousePosition(evt,elem) {
 }
 
 function startDragScroller(evt) {	
-	console.log("start moving scroller");
+	console.log("start moving positionScroller");
 	scrollingTime = true;
-    offset = getMousePosition(evt, scroller);
-    offset.x -= parseFloat(scroller.getAttributeNS(null, "x"));
+    offset = getMousePosition(evt, positionScroller);
+    offset.x -= parseFloat(positionScroller.getAttributeNS(null, "x"));
 }
 
 function stopDragScroller(evt){	
-	console.log("stop moving scroller");  
+	console.log("stop moving positionScroller");  
 	scrollingTime = false;
 }
 
 function moveScroller(evt) {
 		evt.preventDefault();
-		var coord = getMousePosition(evt, scroller);
-		scroller.setAttributeNS(null, "x", coord.x - offset.x);		
-		console.log("moving scroller to ", coord.x - offset.x);
+		var coord = getMousePosition(evt, positionScroller);
+		positionScroller.setAttributeNS(null, "x", coord.x - offset.x);		
+		console.log("moving positionScroller to ", coord.x - offset.x);
 		if (audioInit) {
+			console.log("Change audio time from ", audio.currentTime); 
 			audio.currentTime = (( coord.x - offset.x )*audio.duration - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition);
+			console.log("to ", audio.currentTime);
 		}
 }
 
