@@ -171,7 +171,7 @@ function getShowTime(){
   } else {
     difference =  updatedTime - startTime;
   }
-  updateGUI(),
+  updateGUI();
  }
  
 function updateGUI() {
