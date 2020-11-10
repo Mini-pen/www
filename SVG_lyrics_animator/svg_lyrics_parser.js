@@ -23,6 +23,7 @@ var maxX_CursorPosition;
 
 //svg elem manipulation
 var selectedElement;
+var scrollingTime;
 var offset;
 
 //var startTimerButton = document.querySelector('.startTimer');
@@ -219,26 +220,54 @@ function getMousePosition(evt,elem) {
 
 function startDragScroller(evt) {	
 	console.log("start moving scroller");
-	selectedElement = evt.target;
-    offset = getMousePosition(evt, selectedElement);
-    offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
+	scrollingTime = true;
+    offset = getMousePosition(evt, scrollBar);
+    offset.x -= parseFloat(scrollBar.getAttributeNS(null, "x"));
 }
 
 function stopDragScroller(evt){	
-	console.log("stop moving scroller");
-  selectedElement = null;
+	console.log("stop moving scroller");  
+	scrollingTime = false;
 }
 
 function moveScroller(evt) {
-	if (selectedElement) {
 		evt.preventDefault();
-		var coord = getMousePosition(evt, selectedElement);
-		selectedElement.setAttributeNS(null, "x", coord.x - offset.x);		
+		var coord = getMousePosition(evt, scrollBar);
+		scrollBar.setAttributeNS(null, "x", coord.x - offset.x);		
 		console.log("moving scroller to ", coord.x - offset.x);
 		if (audioInit) {
 			audio.currentTime = (( coord.x - offset.x )*audio.duration - minX_CursorPosition) / (maxX_CursorPosition - minX_CursorPosition);
 		}
-	}
+}
+
+
+function mousePointerMove(evt) {
+	if (selectedElement) { drag(evt); }
+	if (scrollingTime) { moveScroller(evt); }
+	
+}
+
+function startDrag(evt) {
+  if (evt.target.classList.contains('draggable')) {
+    selectedElement = evt.target;
+    offset = getMousePosition(evt);
+    offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
+    offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
+  }
+}
+
+function endDrag(evt) {
+  selectedElement = null; 
+  scrollingTime = false;
+}
+
+function drag(evt) {
+  if (selectedElement) {
+    evt.preventDefault();
+    var coord = getMousePosition(evt, selectedElement);
+    selectedElement.setAttributeNS(null, "x", coord.x);
+    selectedElement.setAttributeNS(null, "y", coord.y);
+  }
 }
 
 function setSpeed(speed) {	
