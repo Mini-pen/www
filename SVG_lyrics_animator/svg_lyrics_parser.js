@@ -19,6 +19,11 @@ var playButton;
 var subDelayButton;
 var addDelayButton;
 
+var positionScroller;
+var cursorPositionMarginInBar = 0.75;
+var minX_CursorPosition = 10.0; //TODO compute this at init
+var maxX_CursorPosition = 130.0; //TODO compute this at init
+
 //var startTimerButton = document.querySelector('.startTimer');
 //var pauseTimerButton = document.querySelector('.pauseTimer');
 //var timerDisplay = document.querySelector('.timer');
@@ -77,6 +82,8 @@ function initPage() {
 	playButton = getSvgElem("playButton");
 	subDelayButton = getSvgElem("subDelayButton");
 	addDelayButton = getSvgElem("addDelayButton");
+	
+	positionScroller = getSvgElem("positionScroller");
 		
 	playPauseButtonText.textContent = "Play";
 	pauseIcon.setAttributeNS(null, 'opacity', '0');	
@@ -164,9 +171,16 @@ function getShowTime(){
   } else {
     difference =  updatedTime - startTime;
   }
-  if (timeText != null) timeText.textContent = computePrintableTime(difference);
-  if (delayText != null) delayText.textContent = computeShortPrintableTime(difference-(audio.currentTime*1000));
+  updateGUI(),
  }
+ 
+function updateGUI() {
+  if (timeText != null) timeText.textContent = computePrintableTime(difference);
+  if (delayText != null) delayText.textContent = computeShortPrintableTime(difference-(audio.currentTime*1000));	
+  
+  var newX = minX_CursorPosition + (maxX_CursorPosition - minX_CursorPosition) * audio.currentTime/audio.duration;
+  if (positionScroller != null) positionScroller.setAttribute('x', newX);
+}
 
 function showHideGui() {
 	toggleVisibilty(playIcon);
@@ -178,6 +192,9 @@ function showHideGui() {
 	toggleVisibilty(subDelayButton);
 	toggleVisibilty(addDelayButton);
 	toggleVisibilty(correctionDelayText);
+}
+
+function moveScroller() {
 }
 
 function getSvgElem(elemId)

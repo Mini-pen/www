@@ -7,20 +7,20 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1301"
-   height="741"
-   viewBox="0 0 344.22291 196.05626"
-   version="1.1"
-   id="svg8"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   onload="initPage();"
    sodipodi:docname="navire_de_sang.svg"
-   onload="initPage();">
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 344.22291 196.05626"
+   height="741"
+   width="1301">
   <font>
     <font-face
-       font-family="Super-sans">
+       font-family="adripm">
       <font-face-src>
         <font-face-uri
-           xlink:href="fonts.svg#Super_Sans" />
+           xlink:href="fonts/adrip1.ttf" />
       </font-face-src>
     </font-face>
   </font>
@@ -28,10 +28,11 @@
      xlink:href="svg_lyrics_parser.js"
      id="script2" />
   <svg:script
-     type="text/ecmascript"
-     id="script1">
+     id="script1"
+     type="text/ecmascript">
     function changeColor(evt) {
     <!-- if evt.target.style.fill  -->
+
 
 
 
@@ -41,37 +42,39 @@
 
 
 
+
     return;
     }
+	
 	
    </svg:script>
   <svg:defs
      id="defs2" />
   <sodipodi:namedview
-     units="px"
-     fit-margin-bottom="10"
-     fit-margin-right="10"
-     fit-margin-left="10"
-     fit-margin-top="10"
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.39676246"
-     inkscape:cx="1440.6751"
-     inkscape:cy="386.75608"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:snap-global="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:document-rotation="0"
      inkscape:window-maximized="1"
-     inkscape:document-rotation="0" />
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     inkscape:snap-global="false"
+     showgrid="false"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="80.164132"
+     inkscape:cx="50.560852"
+     inkscape:zoom="6.3481993"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     units="px" />
   <svg:metadata
      id="metadata5">
     <rdf:RDF>
@@ -85,12 +88,23 @@
     </rdf:RDF>
   </svg:metadata>
   <svg:g
-     transform="translate(-4.7813988,-2.5135417)"
-     inkscape:label="Calque 1"
+     id="layer1"
      inkscape:groupmode="layer"
-     id="layer1"><svg:rect
-   onclick="logCurrentTime()"
-   id="rect918" />
+     inkscape:label="Calque 1"
+     transform="translate(-4.7813988,-2.5135417)"><svg:rect
+   onclick="showHideGui();"
+   ry="0"
+   rx="0"
+   y="2.98508"
+   x="5.7244749"
+   height="7.7803807"
+   width="13.20307"
+   id="showHideButton"
+   style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.465001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1" />
+<svg:rect
+   id="rect918"
+   onclick="logCurrentTime()" />
+
 
 ;
 	   rx=&quot;2.2678576&quot;
@@ -102,538 +116,549 @@
        id=&quot;rect2087&quot;
        style=&quot;fill:#f9f9f9;stroke:#0a001a;stroke-width:0.264583;stroke-opacity:1&quot; /&gt;
     <svg:g
-   onmouseup="style.stroke = &quot;#000000&quot;;"
-   onmousedown="style.stroke = &quot;#CC00BB&quot;; "
-   id="loadJsonButton"
-   transform="matrix(0.98188091,0,0,0.98200871,-144.56547,5.851307)"
-   style="stroke-width:1.01839"
-   onmouseover="style.stroke = &quot;#CC0000&quot;; "
-   onmouseout="style.stroke = &quot;#000000&quot;;"
+   onload="initPage();"
    onclick="initPage();"
-   onload="initPage();">
-  <svg:rect
-     rx="2.5018568"
-     ry="2.5018568"
-     y="5.7155294"
-     x="159.80368"
-     height="9.0899744"
-     width="39.620243"
-     id="Cadre_Image"
-     style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#000000;stroke-width:0.473549;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-     onclick=""
-     inkscape:label="#cadre_image" />
-  <svg:text
-     transform="scale(1.0000651,0.99993491)"
-     id="text2085"
-     y="11.878196"
-     x="162.36426"
-     style="font-style:normal;font-weight:normal;font-size:5.06159px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
-     xml:space="preserve"><svg:tspan
-       style="stroke-width:0.274403"
-       y="11.878196"
-       x="162.36426"
-       id="tspan2083"
-       sodipodi:role="line">Charger JSON</svg:tspan></svg:text>
-</svg:g>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.96957px;line-height:1.25;font-family:Ancient;-inkscape-font-specification:Ancient;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:end;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:end;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#6d6d6d;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-   x="184.88904"
-   y="272.86273"
-   id="text4520-5-62-1-3-2-4-5-6-0"
-   transform="scale(1.0000172,0.9999828)" />
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.96957px;line-height:1.25;font-family:Ancient;-inkscape-font-specification:Ancient;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:end;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:end;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#6d6d6d;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-   x="184.86952"
-   y="294.3764"
-   id="text4520-5-62-1-3-8-7-0-4-1-0"
-   transform="scale(1.0000172,0.9999828)" />
-<svg:g
-   onclick="play();"
    onmouseout="style.stroke = &quot;#000000&quot;;"
    onmouseover="style.stroke = &quot;#CC0000&quot;; "
    style="stroke-width:1.01839"
-   transform="matrix(0.98188092,0,0,0.98200871,-103.07523,5.8499278)"
-   id="playButton"
+   transform="matrix(0.98188091,0,0,0.98200871,-142.44879,1.6179734)"
+   id="loadJsonButton"
    onmousedown="style.stroke = &quot;#CC00BB&quot;; "
-   onmouseup="style.stroke = &quot;#000000&quot;;"
-   inkscape:label="#playButton">
+   onmouseup="style.stroke = &quot;#000000&quot;;">
   <svg:rect
      inkscape:label="#cadre_image"
      onclick=""
-     style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.473549;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-     id="Cadre_Image-1"
-     width="25.879221"
+     style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#000000;stroke-width:0.473549;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+     id="Cadre_Image"
+     width="39.620243"
      height="9.0899744"
-     x="159.92027"
-     y="5.8250613"
+     x="159.80368"
+     y="5.7155294"
      ry="2.5018568"
      rx="2.5018568" />
-  <svg:path
-     id="playIcon"
-     d="M 163.61427,12.035725 V 8.3047748 l 3.2456,1.8793952 z"
-     style="fill:#23d62c;fill-opacity:1;stroke:#23d62c;stroke-width:1.29389;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     onclick="" />
-  <svg:g
-     id="pauseIcon"
-     onclick="">
-    <svg:path
-       id="path1035"
-       d="M 163.60376,8.4731524 V 11.923196"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff880c;stroke-width:1.49804753;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-    <svg:path
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff880c;stroke-width:1.49804753;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       d="M 166.68697,8.4731524 V 11.923196"
-       id="path1035-4" />
-  </svg:g>
   <svg:text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:4.67044px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
-     x="169.44568"
-     y="11.667471"
-     id="play-pause-button-text"
-     transform="scale(1.0000651,0.99993491)"
-     inkscape:label="#play-pause-button-text"><svg:tspan
+     style="font-style:normal;font-weight:normal;font-size:5.06159px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
+     x="162.36426"
+     y="11.878196"
+     id="text2085"
+     transform="scale(1.0000651,0.99993491)"><svg:tspan
        sodipodi:role="line"
-       id="tspan1070"
-       x="169.44568"
-       y="11.667471"
-       style="font-size:4.67044px;stroke-width:0.274403">Play</svg:tspan></svg:text>
+       id="tspan2083"
+       x="162.36426"
+       y="11.878196"
+       style="stroke-width:0.274403">Charger JSON</svg:tspan></svg:text>
 </svg:g>
 <svg:text
-   inkscape:label="#txt-h-001"
-   id="txt-h-001"
-   y="14.80794"
+   transform="scale(1.0000172,0.9999828)"
+   id="text4520-5-62-1-3-2-4-5-6-0"
+   y="272.86273"
+   x="184.88904"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.96957px;line-height:1.25;font-family:Ancient;-inkscape-font-specification:Ancient;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:end;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:end;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#6d6d6d;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   xml:space="preserve" />
+<svg:text
+   transform="scale(1.0000172,0.9999828)"
+   id="text4520-5-62-1-3-8-7-0-4-1-0"
+   y="294.3764"
+   x="184.86952"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.96957px;line-height:1.25;font-family:Ancient;-inkscape-font-specification:Ancient;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:end;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:end;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#6d6d6d;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   xml:space="preserve" />
+<svg:g
+   inkscape:label="#playButton"
+   onmouseup="style.stroke = &quot;#000000&quot;;"
+   onmousedown="style.stroke = &quot;#CC00BB&quot;; "
+   id="playButton"
+   transform="matrix(0.98188092,0,0,0.98200871,-100.95855,1.6165942)"
+   style="stroke-width:1.01839"
+   onmouseover="style.stroke = &quot;#CC0000&quot;; "
+   onmouseout="style.stroke = &quot;#000000&quot;;"
+   onclick="play();">
+  <svg:rect
+     rx="2.5018568"
+     ry="2.5018568"
+     y="5.8250613"
+     x="159.92027"
+     height="9.0899744"
+     width="25.879221"
+     id="Cadre_Image-1"
+     style="opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.473549;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+     onclick=""
+     inkscape:label="#cadre_image" />
+  <svg:path
+     onclick=""
+     style="fill:#23d62c;fill-opacity:1;stroke:#23d62c;stroke-width:1.29389;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 163.61427,12.035725 V 8.3047748 l 3.2456,1.8793952 z"
+     id="playIcon" />
+  <svg:g
+     onclick=""
+     id="pauseIcon">
+    <svg:path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff880c;stroke-width:1.49805;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M 163.60376,8.4731524 V 11.923196"
+       id="path1035" />
+    <svg:path
+       id="path1035-4"
+       d="M 166.68697,8.4731524 V 11.923196"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff880c;stroke-width:1.49805;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+  </svg:g>
+  <svg:text
+     inkscape:label="#play-pause-button-text"
+     transform="scale(1.0000651,0.99993491)"
+     id="play-pause-button-text"
+     y="11.667471"
+     x="169.44568"
+     style="font-style:normal;font-weight:normal;font-size:4.67044px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.274403"
+     xml:space="preserve"><svg:tspan
+       style="font-size:4.67044px;stroke-width:0.274403"
+       y="11.667471"
+       x="169.44568"
+       id="tspan1070"
+       sodipodi:role="line">Play</svg:tspan></svg:text>
+</svg:g>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
    x="360.78439"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="14.80794"
-     x="360.78439"
+   y="14.80794"
+   id="txt-h-001"
+   inkscape:label="#txt-h-001"><svg:tspan
+     sodipodi:role="line"
      id="tspan2949"
-     sodipodi:role="line">Texte horizontal 1 </svg:tspan></svg:text>
+     x="360.78439"
+     y="14.80794"
+     style="stroke-width:0.264583">Texte horizontal 1 </svg:tspan></svg:text>
 <svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="362.33487"
-   y="30.513281"
+   inkscape:label="#txt-h-002"
    id="txt-h-002"
-   inkscape:label="#txt-h-002"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-2"
-     x="362.33487"
+   y="30.513281"
+   x="362.33487"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   xml:space="preserve"><svg:tspan
+     style="stroke-width:0.264583"
      y="30.513281"
-     style="stroke-width:0.264583">Texte horizontal 2 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="355.92041"
-   y="51.894844"
-   id="txt-h-003"
-   inkscape:label="#txt-h-003"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-9"
-     x="355.92041"
-     y="51.894844"
-     style="stroke-width:0.264583">Texte horizontal 3 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="366.61121"
-   y="67.931015"
-   id="txt-h-004"
-   inkscape:label="#txt-h-004"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-6"
-     x="366.61121"
-     y="67.931015"
-     style="stroke-width:0.264583">Texte horizontal 4 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="368.21481"
-   y="89.312576"
-   id="txt-h-005"
-   inkscape:label="#txt-h-005"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-3"
-     x="368.21481"
-     y="89.312576"
-     style="stroke-width:0.264583">Texte horizontal 5 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="367.14572"
-   y="109.62506"
-   id="txt-h-006"
-   inkscape:label="#txt-h-006"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-27"
-     x="367.14572"
-     y="109.62506"
-     style="stroke-width:0.264583">Texte horizontal 6 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="365.00757"
-   y="120.31584"
-   id="txt-h-007"
-   inkscape:label="#txt-h-007"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-92"
-     x="365.00757"
-     y="120.31584"
-     style="stroke-width:0.264583">Texte horizontal 7 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="365.00757"
-   y="143.30103"
-   id="txt-h-008"
-   inkscape:label="#txt-h-008"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-4"
-     x="365.00757"
-     y="143.30103"
-     style="stroke-width:0.264583">Texte horizontal 8 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="365.54211"
-   y="160.94081"
-   id="txt-h-009"
-   inkscape:label="#txt-h-009"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-93"
-     x="365.54211"
-     y="160.94081"
-     style="stroke-width:0.264583">Texte horizontal 9 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="366.07666"
-   y="176.44244"
-   id="txt-h-010"
-   inkscape:label="#txt-h-010"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-7"
-     x="366.07666"
-     y="176.44244"
-     style="stroke-width:0.264583">Texte horizontal 10 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="366.07666"
-   y="193.01315"
-   id="txt-h-011"
-   inkscape:label="#txt-h-011"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-29"
-     x="366.07666"
-     y="193.01315"
-     style="stroke-width:0.264583">Texte horizontal 11 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="-1.4489776"
-   y="-672.81519"
-   id="txt-v-001"
-   inkscape:label="#txt-v-001"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-5"
-     x="-1.4489776"
-     y="-672.81519"
-     style="stroke-width:0.264583">Texte vertical 1 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   inkscape:label="#txt-v-002"
-   id="txt-v-002"
-   y="-657.10986"
-   x="0.10150027"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="-657.10986"
-     x="0.10150027"
-     id="tspan2949-2-6"
-     sodipodi:role="line">Texte vertical 2 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   inkscape:label="#txt-v-003"
-   id="txt-v-003"
-   y="-635.72827"
-   x="-6.3129611"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="-635.72827"
-     x="-6.3129611"
-     id="tspan2949-9-5"
-     sodipodi:role="line">Texte vertical 3 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   inkscape:label="#txt-v-004"
-   id="txt-v-004"
-   y="-619.69214"
-   x="4.3778062"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="-619.69214"
-     x="4.3778062"
-     id="tspan2949-6-5"
-     sodipodi:role="line">Texte vertical 4 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   inkscape:label="#txt-v-005"
-   id="txt-v-005"
-   y="-598.31055"
-   x="5.9814444"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="-598.31055"
-     x="5.9814444"
-     id="tspan2949-3-0"
-     sodipodi:role="line">Texte vertical 5 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   inkscape:label="#txt-v-006"
-   id="txt-v-006"
-   y="-577.99811"
-   x="4.9123526"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="-577.99811"
-     x="4.9123526"
-     id="tspan2949-27-4"
-     sodipodi:role="line">Texte vertical 6 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   inkscape:label="#txt-v-007"
-   id="txt-v-007"
-   y="-567.30731"
-   x="2.7741687"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="-567.30731"
-     x="2.7741687"
-     id="tspan2949-92-1"
-     sodipodi:role="line">Texte vertical 7 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   inkscape:label="#txt-v-008"
-   id="txt-v-008"
-   y="-544.32214"
-   x="2.7741687"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="-544.32214"
-     x="2.7741687"
-     id="tspan2949-4-6"
-     sodipodi:role="line">Texte vertical 8 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   inkscape:label="#txt-v-009"
-   id="txt-v-009"
-   y="-526.68231"
-   x="3.3087146"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="-526.68231"
-     x="3.3087146"
-     id="tspan2949-93-3"
-     sodipodi:role="line">Texte vertical 9 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   inkscape:label="#txt-v-010"
-   id="txt-v-010"
-   y="-511.18073"
-   x="3.8432605"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="-511.18073"
-     x="3.8432605"
-     id="tspan2949-7-5"
-     sodipodi:role="line">Texte vertical 10 </svg:tspan></svg:text>
-<svg:text
-   transform="rotate(90)"
-   inkscape:label="#txt-v-011"
-   id="txt-v-011"
-   y="-494.61002"
-   x="3.8432605"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="-494.61002"
-     x="3.8432605"
-     id="tspan2949-29-1"
-     sodipodi:role="line">Texte vertical 11 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="493.63654"
-   y="126.62679"
-   id="txt-s-001"
-   inkscape:label="#txt-s-001"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-8"
-     x="493.63654"
-     y="126.62679"
-     style="stroke-width:0.264583">Texte spécial 1 </svg:tspan></svg:text>
-<svg:text
-   inkscape:label="#txt-s-002"
-   id="txt-s-002"
-   y="155.0024"
-   x="495.85379"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   xml:space="preserve"><svg:tspan
-     style="stroke-width:0.264583"
-     y="155.0024"
-     x="495.85379"
-     id="tspan2949-2-7"
-     sodipodi:role="line">Texte spécial 2 </svg:tspan></svg:text>
+     x="362.33487"
+     id="tspan2949-2"
+     sodipodi:role="line">Texte horizontal 2 </svg:tspan></svg:text>
 <svg:text
    inkscape:label="#txt-h-003"
-   id="txt-h-003-0"
-   y="180.38509"
-   x="498.10843"
+   id="txt-h-003"
+   y="51.894844"
+   x="355.92041"
    style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
    xml:space="preserve"><svg:tspan
      style="stroke-width:0.264583"
-     y="180.38509"
-     x="498.10843"
-     id="tspan2949-9-0"
-     sodipodi:role="line">Texte spécial 3 </svg:tspan></svg:text>
+     y="51.894844"
+     x="355.92041"
+     id="tspan2949-9"
+     sodipodi:role="line">Texte horizontal 3 </svg:tspan></svg:text>
 <svg:text
-   inkscape:label="#txt-s-004"
-   id="txt-s-004"
-   y="207.09094"
-   x="501.46384"
+   inkscape:label="#txt-h-004"
+   id="txt-h-004"
+   y="67.931015"
+   x="366.61121"
    style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
    xml:space="preserve"><svg:tspan
      style="stroke-width:0.264583"
-     y="207.09094"
-     x="501.46384"
-     id="tspan2949-6-4"
-     sodipodi:role="line">Texte spécial 4 </svg:tspan></svg:text>
+     y="67.931015"
+     x="366.61121"
+     id="tspan2949-6"
+     sodipodi:role="line">Texte horizontal 4 </svg:tspan></svg:text>
 <svg:text
-   onclick="logCurrentTime();"
-   inkscape:label="#timeText"
-   id="timeText"
-   y="19.660976"
-   x="84.088623"
-   style="font-style:normal;font-weight:normal;font-size:9.418px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+   inkscape:label="#txt-h-005"
+   id="txt-h-005"
+   y="89.312576"
+   x="368.21481"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
    xml:space="preserve"><svg:tspan
-     style="stroke-width:0.269449"
-     y="19.660976"
-     x="84.088623"
-     id="tspan1007"
-     sodipodi:role="line">00:00:00:000 </svg:tspan></svg:text>
+     style="stroke-width:0.264583"
+     y="89.312576"
+     x="368.21481"
+     id="tspan2949-3"
+     sodipodi:role="line">Texte horizontal 5 </svg:tspan></svg:text>
+<svg:text
+   inkscape:label="#txt-h-006"
+   id="txt-h-006"
+   y="109.62506"
+   x="367.14572"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   xml:space="preserve"><svg:tspan
+     style="stroke-width:0.264583"
+     y="109.62506"
+     x="367.14572"
+     id="tspan2949-27"
+     sodipodi:role="line">Texte horizontal 6 </svg:tspan></svg:text>
+<svg:text
+   inkscape:label="#txt-h-007"
+   id="txt-h-007"
+   y="120.31584"
+   x="365.00757"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   xml:space="preserve"><svg:tspan
+     style="stroke-width:0.264583"
+     y="120.31584"
+     x="365.00757"
+     id="tspan2949-92"
+     sodipodi:role="line">Texte horizontal 7 </svg:tspan></svg:text>
+<svg:text
+   inkscape:label="#txt-h-008"
+   id="txt-h-008"
+   y="143.30103"
+   x="365.00757"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   xml:space="preserve"><svg:tspan
+     style="stroke-width:0.264583"
+     y="143.30103"
+     x="365.00757"
+     id="tspan2949-4"
+     sodipodi:role="line">Texte horizontal 8 </svg:tspan></svg:text>
+<svg:text
+   inkscape:label="#txt-h-009"
+   id="txt-h-009"
+   y="160.94081"
+   x="365.54211"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   xml:space="preserve"><svg:tspan
+     style="stroke-width:0.264583"
+     y="160.94081"
+     x="365.54211"
+     id="tspan2949-93"
+     sodipodi:role="line">Texte horizontal 9 </svg:tspan></svg:text>
+<svg:text
+   inkscape:label="#txt-h-010"
+   id="txt-h-010"
+   y="176.44244"
+   x="366.07666"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   xml:space="preserve"><svg:tspan
+     style="stroke-width:0.264583"
+     y="176.44244"
+     x="366.07666"
+     id="tspan2949-7"
+     sodipodi:role="line">Texte horizontal 10 </svg:tspan></svg:text>
+<svg:text
+   inkscape:label="#txt-h-011"
+   id="txt-h-011"
+   y="193.01315"
+   x="366.07666"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   xml:space="preserve"><svg:tspan
+     style="stroke-width:0.264583"
+     y="193.01315"
+     x="366.07666"
+     id="tspan2949-29"
+     sodipodi:role="line">Texte horizontal 11 </svg:tspan></svg:text>
+<svg:text
+   inkscape:label="#txt-v-001"
+   id="txt-v-001"
+   y="-672.81519"
+   x="-1.4489776"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   xml:space="preserve"
+   transform="rotate(90)"><svg:tspan
+     style="stroke-width:0.264583"
+     y="-672.81519"
+     x="-1.4489776"
+     id="tspan2949-5"
+     sodipodi:role="line">Texte vertical 1 </svg:tspan></svg:text>
 <svg:text
    xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:6.18734px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
-   x="115.39314"
-   y="9.6953068"
-   id="delayText"
-   inkscape:label="#delayText"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="0.10150027"
+   y="-657.10986"
+   id="txt-v-002"
+   inkscape:label="#txt-v-002"
+   transform="rotate(90)"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-2-6"
+     x="0.10150027"
+     y="-657.10986"
+     style="stroke-width:0.264583">Texte vertical 2 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="-6.3129611"
+   y="-635.72827"
+   id="txt-v-003"
+   inkscape:label="#txt-v-003"
+   transform="rotate(90)"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-9-5"
+     x="-6.3129611"
+     y="-635.72827"
+     style="stroke-width:0.264583">Texte vertical 3 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="4.3778062"
+   y="-619.69214"
+   id="txt-v-004"
+   inkscape:label="#txt-v-004"
+   transform="rotate(90)"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-6-5"
+     x="4.3778062"
+     y="-619.69214"
+     style="stroke-width:0.264583">Texte vertical 4 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="5.9814444"
+   y="-598.31055"
+   id="txt-v-005"
+   inkscape:label="#txt-v-005"
+   transform="rotate(90)"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-3-0"
+     x="5.9814444"
+     y="-598.31055"
+     style="stroke-width:0.264583">Texte vertical 5 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="4.9123526"
+   y="-577.99811"
+   id="txt-v-006"
+   inkscape:label="#txt-v-006"
+   transform="rotate(90)"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-27-4"
+     x="4.9123526"
+     y="-577.99811"
+     style="stroke-width:0.264583">Texte vertical 6 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="2.7741687"
+   y="-567.30731"
+   id="txt-v-007"
+   inkscape:label="#txt-v-007"
+   transform="rotate(90)"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-92-1"
+     x="2.7741687"
+     y="-567.30731"
+     style="stroke-width:0.264583">Texte vertical 7 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="2.7741687"
+   y="-544.32214"
+   id="txt-v-008"
+   inkscape:label="#txt-v-008"
+   transform="rotate(90)"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-4-6"
+     x="2.7741687"
+     y="-544.32214"
+     style="stroke-width:0.264583">Texte vertical 8 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="3.3087146"
+   y="-526.68231"
+   id="txt-v-009"
+   inkscape:label="#txt-v-009"
+   transform="rotate(90)"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-93-3"
+     x="3.3087146"
+     y="-526.68231"
+     style="stroke-width:0.264583">Texte vertical 9 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="3.8432605"
+   y="-511.18073"
+   id="txt-v-010"
+   inkscape:label="#txt-v-010"
+   transform="rotate(90)"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-7-5"
+     x="3.8432605"
+     y="-511.18073"
+     style="stroke-width:0.264583">Texte vertical 10 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="3.8432605"
+   y="-494.61002"
+   id="txt-v-011"
+   inkscape:label="#txt-v-011"
+   transform="rotate(90)"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-29-1"
+     x="3.8432605"
+     y="-494.61002"
+     style="stroke-width:0.264583">Texte vertical 11 </svg:tspan></svg:text>
+<svg:text
+   inkscape:label="#txt-s-001"
+   id="txt-s-001"
+   y="126.62679"
+   x="493.63654"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   xml:space="preserve"><svg:tspan
+     style="stroke-width:0.264583"
+     y="126.62679"
+     x="493.63654"
+     id="tspan2949-8"
+     sodipodi:role="line">Texte spécial 1 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="495.85379"
+   y="155.0024"
+   id="txt-s-002"
+   inkscape:label="#txt-s-002"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-2-7"
+     x="495.85379"
+     y="155.0024"
+     style="stroke-width:0.264583">Texte spécial 2 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="498.10843"
+   y="180.38509"
+   id="txt-h-003-0"
+   inkscape:label="#txt-h-003"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-9-0"
+     x="498.10843"
+     y="180.38509"
+     style="stroke-width:0.264583">Texte spécial 3 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+   x="501.46384"
+   y="207.09094"
+   id="txt-s-004"
+   inkscape:label="#txt-s-004"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-6-4"
+     x="501.46384"
+     y="207.09094"
+     style="stroke-width:0.264583">Texte spécial 4 </svg:tspan></svg:text>
+<svg:text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:7.65464px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+   x="85.871994"
+   y="12.017104"
+   id="timeText"
+   inkscape:label="#timeText"
    onclick="logCurrentTime();"><svg:tspan
      sodipodi:role="line"
+     id="tspan1007"
+     x="85.871994"
+     y="12.017104"
+     style="stroke-width:0.269449">00:00:00:000 </svg:tspan></svg:text>
+<svg:text
+   transform="scale(1.0049081,0.99511588)"
+   onclick="logCurrentTime();"
+   inkscape:label="#delayText"
+   id="delayText"
+   y="18.236765"
+   x="109.95216"
+   style="font-style:normal;font-weight:normal;font-size:5.15914px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+   xml:space="preserve"><svg:tspan
+     style="stroke-width:0.269449"
+     y="18.236765"
+     x="109.95216"
      id="tspan1007-7"
-     x="115.39314"
-     y="9.6953068"
-     style="stroke-width:0.269449">00:00:000 </svg:tspan></svg:text>
+     sodipodi:role="line">00:00:000 </svg:tspan></svg:text>
 <svg:g
-   id="subDelayButton"
-   transform="translate(-24.573154,-17.243468)"
-   onclick="subDelay();">
-  <svg:ellipse
-     onclick="timerCalibrate();"
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.464999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
-     id="timerCalibrateButton"
-     cx="112.82638"
-     cy="24.686499"
-     rx="3.0283198"
-     ry="2.8670845" />
-  <svg:path
-     style="fill:none;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 111.44124,24.686499 h 2.77028"
-     id="path1192" />
-</svg:g>
-<svg:g
-   id="addDelayButton"
-   transform="translate(-37.253136,-17.132697)"
-   onclick="addDelay();">
+   style="stroke-width:1.1993"
+   onclick="subDelay();"
+   transform="matrix(0.83791429,0,0,0.82974929,-6.787953,-4.2047346)"
+   id="subDelayButton">
   <svg:ellipse
      ry="2.8670845"
      rx="3.0283198"
-     cy="24.575727"
-     cx="147.66008"
-     id="timerCalibrateButton-2"
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+     cy="24.686499"
+     cx="112.82638"
+     id="timerCalibrateButton"
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.557672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
      onclick="timerCalibrate();" />
   <svg:path
-     id="path1192-6"
-     d="m 146.27494,24.575727 h 2.77028"
-     style="fill:none;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <svg:path
-     id="path1192-2"
-     d="m 147.66008,23.190587 v 2.77028"
-     style="fill:none;stroke:#000000;stroke-width:0.865;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path1192"
+     d="m 111.44124,24.686499 h 2.77028"
+     style="fill:none;stroke:#000000;stroke-width:1.03739;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg:g>
-<svg:rect
-   style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.465001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
-   id="showHideButton"
-   width="13.20307"
-   height="7.7803807"
-   x="5.7244749"
-   y="2.98508"
-   rx="0"
-   ry="0"
-   onclick="showHideGui();" />
+<svg:g
+   style="stroke-width:1.1993"
+   onclick="addDelay();"
+   transform="matrix(0.83791429,0,0,0.82974929,-17.412691,-4.1128228)"
+   id="addDelayButton">
+  <svg:ellipse
+     onclick="timerCalibrate();"
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.557673;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+     id="timerCalibrateButton-2"
+     cx="147.66008"
+     cy="24.575727"
+     rx="3.0283198"
+     ry="2.8670845" />
+  <svg:path
+     style="fill:none;stroke:#000000;stroke-width:1.03739;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 146.27494,24.575727 h 2.77028"
+     id="path1192-6" />
+  <svg:path
+     style="fill:none;stroke:#000000;stroke-width:1.03739;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 147.66008,23.190587 v 2.77028"
+     id="path1192-2" />
+</svg:g>
 <svg:text
-   onclick="logCurrentTime();"
-   inkscape:label="#delayText"
-   id="correctionDelayText"
-   y="9.695303"
-   x="155.95413"
-   style="font-style:normal;font-weight:normal;font-size:6.18733px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:12.5898;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269449"
+   transform="matrix(0.83791429,0,0,0.82974929,-39.01666,10.045722)"
    xml:space="preserve"
-   transform="translate(-63.036166,-0.06905518)"><svg:tspan
+   style="font-style:normal;font-weight:normal;font-size:6.18733px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:12.5898;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32315"
+   x="155.95413"
+   y="9.695303"
+   id="correctionDelayText"
+   inkscape:label="#delayText"
+   onclick="logCurrentTime();"><svg:tspan
      x="155.95413"
      y="9.695303"><svg:tspan
-       style="text-align:center;text-anchor:middle;stroke-width:0.269449">000 </svg:tspan></svg:tspan></svg:text>
+       style="text-align:center;text-anchor:middle;stroke-width:0.32315">000 </svg:tspan></svg:tspan></svg:text>
 <svg:text
-   inkscape:label="#txt-h-012"
-   id="txt-h-012"
-   y="215.18488"
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
    x="365.76953"
+   y="215.18488"
+   id="txt-h-012"
+   inkscape:label="#txt-h-012"><svg:tspan
+     sodipodi:role="line"
+     id="tspan2949-29-5"
+     x="365.76953"
+     y="215.18488"
+     style="stroke-width:0.264583">Texte horizontal 12 </svg:tspan></svg:text>
+<svg:text
+   transform="rotate(90)"
+   inkscape:label="#txt-v-012"
+   id="txt-v-012"
+   y="-479.63834"
+   x="4.7309551"
    style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
    xml:space="preserve"><svg:tspan
      style="stroke-width:0.264583"
-     y="215.18488"
-     x="365.76953"
-     id="tspan2949-29-5"
-     sodipodi:role="line">Texte horizontal 12 </svg:tspan></svg:text>
-<svg:text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-   x="4.7309551"
-   y="-479.63834"
-   id="txt-v-012"
-   inkscape:label="#txt-v-012"
-   transform="rotate(90)"><svg:tspan
-     sodipodi:role="line"
-     id="tspan2949-29-1-3"
-     x="4.7309551"
      y="-479.63834"
-     style="stroke-width:0.264583">Texte vertical 12 </svg:tspan></svg:text>
+     x="4.7309551"
+     id="tspan2949-29-1-3"
+     sodipodi:role="line">Texte vertical 12 </svg:tspan></svg:text>
+<svg:rect
+   rx="1.4587516"
+   ry="1.5004241"
+   y="20.079187"
+   x="14.242416"
+   height="6.0017014"
+   width="123.28497"
+   id="rect920"
+   style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.464999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1" />
+<svg:rect
+   ry="1.1253171"
+   rx="0.91692668"
+   y="20.746042"
+   x="15.013899"
+   height="4.6679902"
+   width="1.8338534"
+   id="rect938"
+   style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f0ffda;fill-opacity:1;stroke:#0a0010;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1" />
 </svg:g>
 </svg:svg>
